@@ -1,0 +1,42 @@
+Overview: A project to build an agent that combines textual question answering with image and video generation capabilities within a unified system.
+
+Learning objectives:
+
+
+Generate images from text using Stable Diffusion XL
+
+Create short clips with a text-to-video model
+
+
+Build a multimodal agent that handles questions and media requests
+
+Develop a simple Gradio UI to interact with the agent
+
+Estimated Time Commitment: This project typically takes around 90 minutes, depending on how much time you spend experimenting.
+
+Instructions: Open the notebook on GitHub using the link above. To run locally, clone the repository, open the notebook in Jupyter or VS Code, and run it in your Python environment. Then follow these steps:
+
+
+Start at the top of the notebook and run every cell in order. 
+
+When you see a comment such as `YOUR CODE HERE` inside a code cell, add the missing lines where the comment appears.  
+
+Experiment. Change decoding settings one at a time (temperature, `top_k`, `top_p`), try a few different prompts, and inspect how tokenization affects outputs.
+
+When you get stuck:
+
+Post your question in the Q/A space and get guidance from the instructor or your peers.
+
+If you can’t resolve the issue, make a note of where you stopped and continue with the next sections. The complete solution will be reviewed during the weekly Project Deep Dive session.
+
+When you cannot complete the project: 
+
+Skim through the notebook to familiarize yourself with the main ideas.  
+
+Join the Project Deep Dive session for a full walkthrough and explanation.  
+
+If you cannot attend live, watch the session recording to catch up at your own pace. 
+
+Start here (full project notebook and instructions): 
+
+https://github.com/bytebyteai/ai-eng-projects/tree/main/project_5

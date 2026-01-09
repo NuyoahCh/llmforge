@@ -1,0 +1,41 @@
+Title: Thinking and Reasoning LLMs
+
+This lecture explores reasoning-focused LLMs and how they achieve stronger problem-solving through inference-time and training-time techniques. We examine approaches like chain-of-thought, self-consistency, tree search, reward modeling, and self-refinement, along with recent models that internalize search.
+
+Learning Objectives:
+
+Understand the landscape of reasoning models, including OpenAI’s “o” family and DeepSeek-R1
+
+Learn inference-time methods such as chain-of-thought prompting, self-consistency, sequential revision, tree of thoughts, and verifier-guided search
+
+Study training-time strategies, including supervised finetuning on reasoning data, reinforcement learning with verifiers, reward modeling, and self-refinement
+
+Explore emerging directions like Meta-CoT and the internalization of search within reasoning models
+
+Assets:
+
+Canvas: The asset has been uploaded under Files (icon on the top left of the page). Please download it and upload it to your Excalidraw session.
+
+Links mentioned in the video:
+
+Text leaderboard: https://lmarena.ai/leaderboard/text
+
+DeekSeek-R1 paper: https://arxiv.org/abs/2501.12948
+
+Large Language Models are Zero-Shot Reasoners; https://arxiv.org/abs/2205.11916
+
+Self-Consistency Improves Chain of Thought Reasoning in Language Models: https://arxiv.org/abs/2203.11171
+
+Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters: https://arxiv.org/abs/2408.03314
+
+STaR: Bootstrapping Reasoning With Reasoning: https://arxiv.org/abs/2203.14465
+
+Let's Verify Step by Step: https://arxiv.org/abs/2305.20050
+
+Improve Mathematical Reasoning in Language Models by Automated Process Supervision: https://arxiv.org/abs/2406.06592v1
+
+Training Language Models to Self-Correct via Reinforcement Learning: https://arxiv.org/abs/2409.12917
+
+Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Thought: https://arxiv.org/abs/2501.04682
+
+Introducing deep research: https://openai.com/index/introducing-deep-research/

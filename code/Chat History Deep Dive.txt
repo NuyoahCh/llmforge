@@ -1,0 +1,330 @@
+00:03:11	John Spenceley:	Good morning!
+00:03:19	Siddartha Thota:	Hello
+00:09:25	Sankar Ayinala:	What tool you are using for this demo? VS code IDE or Anaconda IDE?
+00:11:19	Prasad:	Replying to "What tool you are us..."
+
+VS Code
+00:11:41	Duane Morgan:	Replying to "What tool you are us..."
+
+Cursor
+00:14:20	Dipanwita Saha:	How is he getting the url? Did he deploy his model?
+00:15:20	ps:	thats the default url when you run ollama locally
+00:15:24	Anand Naidu:	Replying to "How is he getting th..."
+
+It’s default for Ollama.
+00:15:36	Chetan Vartak:	Replying to "How is he getting th..."
+
+vscode with GitHub copilot... i think it gives free auto complete
+00:15:44	Sankar Ayinala:	Replying to "What tool you are us..."
+
+Ok
+00:15:46	Jesse Liamzon:	Replying to "How is he getting th..."
+
+Default URL for a local Ollama instance is http://localhost:11434
+00:15:51	Duane Morgan:	Replying to "How is he getting th..."
+
+It’s Cursor
+00:15:52	Prasad:	Reacted to "Default URL for a lo..." with 👍
+00:16:22	Shiv S:	Reacted to "It’s Cursor" with 👍
+00:16:36	Andrew Harasymiw:	Replying to "How is he getting th..."
+
+It looks like he’s using ollama, which runs locally on his own machine.  Any server running locally on your machine will have the url:
+
+http://localhost:xxxx 
+
+Those numbers after the ‘:’ are the port, and you can set those yourself, but local servers tend to have preset ports that they default to.  Because of that, he knew what port to use.
+00:17:31	Dipanwita Saha:	Replying to "How is he getting th..."
+
+I understand the local host but will it host the model the 3.2B model? In vllm you have to deploy that
+00:17:57	Shiv S:	ollama pull {model} - pulls the model specified
+00:18:22	Andrew Harasymiw:	Replying to "How is he getting th..."
+
+OH, yeah, I’m guessing he already did ‘ollama run model_name’ or ‘ollama pull model_name’ on the command line to get it going.
+00:18:24	Siddartha Thota:	I’m still fine with auto-completion, Cursor and Windsurf makes me feel dumb
+00:18:27	Andrew Harasymiw:	Replying to "How is he getting th..."
+
+Or… hit won’t work and he will do that 😛
+00:18:43	Andrew Harasymiw:	Reacted to "I’m still fine with ..." with 💯
+00:18:50	Parvez Shaikh:	Reacted to "I’m still fine with ..." with 😂
+00:18:55	Duane Morgan:	Reacted to "I’m still fine with ..." with 👍
+00:18:55	Dipanwita Saha:	Replying to "How is he getting th..."
+
+Thanks! Makes sense. I was confused how the model is available in localhost
+00:18:58	Sandeep Raikar:	Reacted to "I’m still fine with ..." with 💯
+00:19:03	Vishv Brahmbhatt:	Reacted to "I’m still fine with ..." with 😂
+00:19:12	shazwi suwandi:	Reacted to "Default URL for a lo..." with 👍
+00:19:14	Dylan Thomas:	Replying to "How is he getting th..."
+
+I had to start putting all those models on an external disk: filling up my MacBook ;-) https://bitsby.me/til/2025-10-26/
+00:19:25	Jesse Liamzon:	Reacted to "OH, yeah, I’m guessi..." with 💯
+00:19:32	Craig Rodrigues:	Reacted to "I’m still fine with ..." with 😂
+00:19:38	ps:	Reacted to "I had to start put..." with 👆
+00:19:52	Fayyaz Poonawala:	Reacted to "I had to start putti..." with 👆
+00:19:53	Dipanwita Saha:	Reacted to "OH, yeah, I’m guessi..." with 🙏
+00:19:56	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+I’m liking vs code with normal autocomplete, and then Claude code via command line.  That’s just the sweet spot for my brain right now.  I’m sure I’ll change with time.  For some reason though, my brain is finding it easier to just “slap on another tool’, instead of changing (too much at once) the tool I’m used to using.
+00:20:09	Craig Rodrigues:	Reacted to "I’m liking vs code w..." with 👍
+00:20:11	Andrew Harasymiw:	Replying to "How is he getting th..."
+
+Oh yeah, they are so big!
+00:20:18	Andrew Harasymiw:	Reacted to "Thanks! Makes sense...." with 🙌🏻
+00:20:31	Andrew Harasymiw:	Replying to "How is he getting th..."
+
+I bought an external hard drive to fit them.
+00:20:38	Siddartha Thota:	Claude code also has an interface other than command line. If you see Ali’s IDE, you’ll see Claude Code’s logo on the right top.
+
+That works pretty similar to how Claude Code/Windsurf works
+00:21:05	Dylan Thomas:	Reacted to "I bought an external..." with 😆
+00:21:49	Lucy K:	Reacted to "I had to start putti..." with 👍
+00:22:27	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+Great call, I have the plugin too.  I need to start messing around with it.  My brain is just stressed with the AI stuff, it feel like changing my IDE too much will be the straw that breaks me 😛. Ultimately though, I really want to get to that point where I’m interacting with one tool.
+
+That’s always the hardest part about this new stuff for me.
+
+Yeah, there’s new tech and new concepts, but also new tools!  My brain needs to firewall those concepts until it’s comfortable with the concepts 😛
+00:22:48	Andrew Harasymiw:	Reacted to "Claude code also has..." with 🙌🏻
+00:22:57	Siddartha Thota:	Replying to "I’m still fine with ..."
+
+Its both exciting and scary at the same time!
+00:23:34	Shiv S:	Replying to "How is he getting th..."
+
+ollama once downloaded runs in background unless we stop. we can check in windows systems tray
+00:24:02	Dylan Thomas:	Replying to "I’m still fine with ..."
+
+I’ve been really digging the Claude CLI (terminal) version. As a former GitHub employee, I really do appreciate the VS Code integration, but I also don’t feel like spend the extra $10 a month for that layer on top of Claude.
+00:24:11	Bhanu Anishetty:	Reacted to "I had to start putti..." with 👆
+00:24:28	Andrew Harasymiw:	Reacted to "Its both exciting an..." with 💯
+00:25:13	Siddartha Thota:	Hehe I agree with that. I feel with the amount of $$$ these AI companies are spending, they are trying to figure out ways to recoup. As of now the cash outflow > inflow for most of the companies.
+00:25:14	Andrew Harasymiw:	Reacted to "I’ve been really dig..." with 🙌🏻
+00:25:45	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+100%
+And the difference is so great, that the subscription fees are just a drop in the bucket.
+00:26:03	Rahul Kulkarni:	Replying to "I’m still fine with ..."
+
+Is there a reason to use Pipeline this time vs langchain?
+00:29:24	Yu-Jhen:	Could someone share the reinforcement learning video link again that Ali mentioned in the beginning of the meeting?
+00:30:05	shazwi suwandi:	Replying to "Could someone share ..."
+
+https://www.youtube.com/watch?v=4E27qlfYw0A
+00:30:28	Yu-Jhen:	Reacted to "https://www.youtub..." with ❤️
+00:30:35	Yu-Jhen:	Replying to "Could someone shar..."
+
+Thanks!!
+00:30:57	Jesse Liamzon:	Reacted to "https://www.youtube...." with ❤️
+00:31:39	Peter Garland:	Reacted to "Is there a reason to..." with ☝️
+00:31:48	Bhanu Anishetty:	Replying to "How is he getting th..."
+
+I had to upgrade my default SSD too, just to fit the ever increasing number of models that I am having to install locally. And ollama by default installs on your OS (C) drive, and would not let you install to *a drive you want* on your machine. You could technically copy the models yourself to another drive but you will also end up creating PATH variable to point another drive. The largest model so far in this course is deepseek, its around 5.2 GB
+00:31:55	Shitalkumar Sawant:	Reacted to "I had to start putti..." with 👍
+00:32:17	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+I would assume that we just don’t need langchain for this.  We’ve used it before in situations where we may not strictly need it, but that was so we could get used to using it.  
+
+Since we’re really zooming in on thinking and reasoning this week, removing that extra piece (langchain) can help us focus on which pieces are important for this topic.
+
+I’m not saying that’s the answer.  I’m saying that’s my guess 😛
+
+Langchain seems to come in best when you want to to hook up to a bunch of llamas, some locally some not.
+00:32:57	Bhanu Anishetty:	Reacted to "Its both exciting an..." with 💯
+00:33:07	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+Here we just need to hook up to one at a time, and only try out a few, all of which can likely be run locally (one that’s good at thinking, one that’s not, one that’s low power, and one that’s high power). Then we can see which of them does best.
+00:33:15	Bhanu Anishetty:	Reacted to "I’ve been really dig..." with 👍
+00:33:21	Andrew Harasymiw:	Replying to "I’m still fine with ..."
+
+Feel free to chime in with other ideas, because that’s just the story I’m telling myself 😛
+00:33:54	Andrew Harasymiw:	Reacted to "Could someone share ..." with 🙌🏻
+00:33:56	Andrew Harasymiw:	Reacted to "https://www.youtube...." with ❤️
+00:34:01	Andrew Harasymiw:	Replying to "Could someone share ..."
+
+Thank you!
+00:34:13	Andrew Harasymiw:	Reacted to "How is he getting th..." with 🙌🏻
+00:34:15	Andrew Harasymiw:	Reacted to "What tool you are us..." with 🙌🏻
+00:34:25	Dylan Thomas:	Reacted to "https://www.youtube...." with ❤️
+00:35:00	Dylan Thomas:	Did anyone catch that Hugging Face link to new guidance on building and shipping a deep learning model? @Ali Aminian shared it in the first few minutes.
+00:36:32	Duane Morgan:	Replying to "Did anyone catch tha..."
+
+https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook#production-why-cant-you-use-an-existing-model
+00:36:46	Andrew Harasymiw:	Reacted to "Did anyone catch tha..." with 🙌🏻
+00:36:49	Andrew Harasymiw:	Reacted to "https://huggingface...." with 🙌🏻
+00:37:10	Dylan Thomas:	Reacted to "https://huggingface...." with ❤️
+00:37:11	Shiv S:	Reacted to "https://huggingface...." with 👍
+00:37:20	shazwi suwandi:	Reacted to "https://huggingface...." with ❤️
+00:37:21	Bhanu Anishetty:	Reacted to "https://huggingface...." with ❤️
+00:37:34	Rahul Kulkarni:	Reacted to "https://huggingface...." with 👍
+00:37:35	Shitalkumar Sawant:	Reacted to "https://huggingface...." with 🙌🏻
+00:38:00	Siddartha Thota:	Reacted to "https://huggingface...." with ❤️
+00:38:40	Duane Morgan:	https://arxiv.org/pdf/2203.11171
+00:39:54	Chetan Vartak:	Reacted to "https://huggingface...." with 👍
+00:41:07	Andrew Harasymiw:	So “thinking model” means “peer reviewed model”
+00:41:45	Andrew Harasymiw:	Replying to "So “thinking model” ..."
+
+Ah, that’s just one method
+00:42:19	Siddartha Thota:	Replying to "So “thinking model” ..."
+
+yeah
+00:43:41	Andrew Harasymiw:	Reacted to "yeah" with 👍🏻
+00:45:40	Prasad:	Reacted to "https://huggingface...." with 👍
+00:47:56	Andrew Harasymiw:	Replying to "So “thinking model” ..."
+
+No need for peer review if you self replicate the result.  That makes sense.
+00:53:04	Anand Naidu:	Off-topic — Has anyone explored document parsing solutions? From what I’ve been reading on reddit/HN, Google Document AI, Amazon Textract, and Microsoft Document Intelligence seem to be the prefered options. Has anyone used other paid or open-source tools that can reliably handle complex PDFs(multilingual text, tables, images, or scanned pages)?
+00:56:18	Prasad:	Replying to "Off-topic — Has anyo..."
+
+I saw this somewhere: https://github.com/docling-project/docling
+00:56:58	Raluca Bejan:	Reacted to "https://arxiv.org/pd..." with 👍
+00:57:04	Raluca Bejan:	Reacted to "https://huggingface...." with 🙌🏻
+00:58:02	Anand Naidu:	Replying to "Off-topic — Has anyo..."
+
+@Prasad It’s OSS but doesn’t parse charts in PDFs. Also limited support for mete data extraction.
+00:58:05	Anand Naidu:	Reacted to "I saw this somewhere..." with 👍
+00:59:02	Shitalkumar Sawant:	Replying to "Off-topic — Has anyo..."
+
+A somewhat old school answer here:
+
+I have seen Apache TIKA being successfully used for document parsing. It’s free so great to get started with.
+
+However it is not clear if it is meaningful for AI applications as well. The output of Apache TIKA is pure text.
+00:59:42	Siddartha Thota:	Apparently most of this reasoning is dependent  on the way we design the prompts. The base structure remains the same
+00:59:56	Anand Naidu:	Reacted to "A somewhat old schoo..." with 👍
+01:00:04	Prasad Maderamitla:	Can we ask Question?
+01:00:22	Prasad:	Reacted to "A somewhat old schoo..." with 👍
+01:00:29	Prasad:	Reacted to "@Prasad It’s OSS but..." with 👍
+01:01:14	Rahul Kulkarni:	The choice of model will likely influences more towards generating results in consistent format.
+01:01:58	Siddartha Thota:	Reacted to "The choice of model ..." with 👍
+01:07:56	Raluca Bejan:	I will leave a question here: How would LATS differ from ToT?
+01:14:42	Raluca Bejan:	And a second question, how could an LLM help here?
+01:16:27	Bhanu Anishetty:	I have only used Azure Document Intelligence Models, and mostly pre-built 🙁 Yet to explore models for complex pdfs. In the manufacturing space we are exploring the use of document intelligence to be able to extract equipment names, part numbers, maintenance steps, safety instructions and diagrams for any kind of faster decision making from part search and replacements to any other maintenance. We are talking about documents and manuals >100K numbers in pdfs, images, CAD drawings and hand-written maintenance records.
+01:20:56	Anand Naidu:	Reacted to "I have only used Azu..." with 👍
+01:21:05	Bhanu Anishetty:	How long did the Multi-Agent deep research take to respond for 2-3 agents for any of you who have implemented this locally? trying to get a general estimate. For 3 agents, it was taking me more than 5 minutes, so had to cut it down to a single agent.
+01:21:48	Craig Rodrigues:	Replying to "I will leave a quest..."
+
+@Raluca Bejan  https://grok.com/share/bGVnYWN5_b54f347b-4fe1-4328-a38e-260ec52315be
+01:22:29	Rahul Kulkarni:	What’s practical use case of using ToT in Enterprise applications?
+01:23:20	Chetan Vartak:	@Ali Aminian, I think the model returns the full response... not just the initial thoughts.. So in that case it is same as self-consistency+COT.
+01:23:56	Raluca Bejan:	Replying to "What’s practical use..."
+
+Diagnostics systems could be a practical application, i.e. when something crashes in production. There could be multiple solutions.
+01:24:27	Anand Naidu:	Replying to "How long did the Mul..."
+
+Took less than a minute with Deepseek on my M1.
+01:25:59	Bhanu Anishetty:	Replying to "Off-topic — Has anyo..."
+
+I was definitely amazed at how good the pre-built document intelligence models from Azure were. As consumers, we will soon be able to file complex tax returns entirely on our own using pre-built Document Intelligence models😁
+01:27:31	Rahul Kulkarni:	Replying to "What’s practical use..."
+
+What’s a likelihood of LLMs responding better with ToT on the data that maybe very specific to each customer. Just thinking out loud.
+01:28:18	Bhanu Anishetty:	Replying to "How long did the Mul..."
+
+Very interesting. I might have configured my setup to run against CPU instead of GPU. Hopefully that should fix it.
+01:28:47	Bhanu Anishetty:	Reacted to "Took less than a min..." with 👍
+01:29:04	Raluca Bejan:	Replying to "What’s practical use..."
+
+Probably you are right, it makes sense to behave better with specific data.
+01:30:08	Raluca Bejan:	Replying to "What’s practical use..."
+
+Ah, especially if a layer of specific APIs are exposed, I think, i.e. via mcp
+01:31:28	Anand Naidu:	Found this gem. Author implements ReAct pattern with just pure python and Prompt Engineering. https://til.simonwillison.net/llms/python-react-pattern.
+01:31:46	Raluca Bejan:	Reacted to "Found this gem. Auth..." with 👍
+01:31:50	Craig Rodrigues:	Reacted to "Found this gem. Auth..." with 👍
+01:35:37	Prasad:	Reacted to "Found this gem. Auth..." with 👍
+01:37:00	mallik nimmagadda:	Reacted to "Found this gem. Auth..." with 👍
+01:40:34	Dipanwita Saha:	What is the huggingface link Ali shared at the beginning?
+01:40:53	Craig Rodrigues:	I shared Andrej Karpathy’s announcement and link for nano chat:
+https://community.bytebyteai.com/c/member-connections#message_2036631950 
+
+https://x.com/karpathy/status/1977755427569111362?s=46 
+
+https://github.com/karpathy/nanochat
+01:41:41	Shiv S:	Reacted to "I shared Andrej Karp..." with 👍
+01:41:45	Andrew Harasymiw:	Reacted to "I shared Andrej Karp..." with 🙌🏻
+01:42:09	Andrew Harasymiw:	Replying to "What is the huggingf..."
+
+https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook#introduction
+01:42:23	Andrew Harasymiw:	Reacted to "What is the huggingf..." with 🙌🏻
+01:42:40	Prasad:	Reacted to "I shared Andrej Karp..." with 👍
+01:47:55	Chetan Vartak:	Reacted to "I shared Andrej Karp..." with 👍
+02:08:17	Shitalkumar Sawant:	Reacted to "Found this gem. Auth..." with 👍
+02:18:28	Peter Garland:	https://docs.vllm.ai/en/v0.10.2/features/automatic_prefix_caching.html  in case anyone is interested
+02:18:48	Anand Naidu:	Reacted to "https://docs.vllm.ai..." with 👍
+02:19:28	Rahul Kulkarni:	Reacted to "https://docs.vllm.ai..." with 👍
+02:23:18	Prasad:	Reacted to "https://docs.vllm.ai..." with 👍
+02:26:56	Andrew Harasymiw:	Reacted to "https://docs.vllm.ai..." with 👍
+02:27:22	Shiv S:	Reacted to "https://docs.vllm.ai..." with 👍
+02:27:40	Rahul Kulkarni:	When we forget, implement Sequential revision🙂
+02:28:13	Andrew Harasymiw:	Replying to "When you forget, imp..."
+
+A smart default.
+02:28:22	Prasad:	Reacted to "When we forget, impl..." with 👍
+02:29:17	Craig Rodrigues:	Last week, Meta laid off 600 people in their AI unit: https://www.cnbc.com/2025/10/22/meta-layoffs-ai.html 
+
+What’s the best hope to stay employed these days? 😢
+02:30:03	Peter Garland:	Replying to "Last week, Meta laid..."
+
+my question is related to this let me ask it
+02:30:12	Craig Rodrigues:	Reacted to "my question is relat..." with 👍
+02:32:18	Bhanu Anishetty:	Replying to "Last week, Meta laid..."
+
+Starting our own thing 😜
+02:32:41	MK:	Reacted to "Last week, Meta la..." with 🤪
+02:33:53	MK:	Replying to "Last week, Meta la..."
+
+the best hope to stay employed is go embedded or low level :)
+02:34:25	Rahul Kulkarni:	Good answer on what’s realistic and what’s not with AI
+02:35:26	Bhanu Anishetty:	Replying to "Last week, Meta laid..."
+
+Layoffs are not performance based anymore. So, we cannot solve a problem we do not know exists. Some say culture based layoffs, some say restructuring, some say M&A, some say divestiture, most of which have nothing to do with the employee or the team or their performance.
+02:35:37	Craig Rodrigues:	Reacted to "Layoffs are not perf..." with 👍
+02:36:28	D Stanislaus:	Reacted to "Starting our own thi..." with 👍
+02:36:44	Craig Rodrigues:	Reacted to "the best hope to sta..." with 👍
+02:36:57	MK:	Reacted to "I’ve been really ..." with 👍
+02:39:39	Prasad:	Replying to "Last week, Meta laid..."
+
+Just an observation: It seems companies are prioritizing massive investments in GPU infrastructure. To fund this, they're reallocating budget, and these layoffs appear to be a direct consequence of that shift from personnel to capex. I maybe oversimplifying it - just sharing my observation.
+02:41:00	Duane Morgan:	Newsletter creep goes crazy!
+02:41:14	Rubinder:	Reacted to "Newsletter creep goe..." with 😂
+02:41:39	Craig Rodrigues:	https://tldr.tech/ai
+02:42:34	D Stanislaus:	Reacted to "https://tldr.tech/ai" with 👍
+02:42:49	MK:	Reacted to "https://tldr.tech/..." with 🤓
+02:43:38	MK:	Reacted to "https://docs.vllm...." with 👍
+02:43:44	Prasad:	Reacted to "https://tldr.tech/ai" with 👍
+02:45:00	MK:	Reacted to "https://huggingfac..." with 👍
+02:45:07	MK:	Reacted to "https://www.youtub..." with 👍
+02:46:15	Deep Pandya:	Reacted to "https://docs.vllm.ai..." with 👍
+02:46:50	Duane Morgan:	10 years is like 2-3 generations at this rate
+02:46:53	Craig Rodrigues:	Reacted to "Just an observation:..." with 👍
+02:46:55	Bhanu Anishetty:	10? I think 1 year is fine :p
+02:47:16	Bhanu Anishetty:	Reacted to "10 years is like 2-3..." with ❤️
+02:47:19	Craig Rodrigues:	Replying to "Last week, Meta laid..."
+
+Amazon laid of 14,000 https://techcrunch.com/2025/10/28/amazon-to-cut-14000-corporate-jobs/ 
+
+Some theories are that they are shifting spending to AI and GPUs but who knows.
+02:47:26	Prasad:	Reacted to "10? I think 1 year i..." with 🤣
+02:47:34	MK:	Reacted to "10? I think 1 year..." with 🤣
+02:47:36	Prasad:	Reacted to "10 years is like 2-3..." with 😃
+02:47:43	MK:	Reacted to "10 years is like 2..." with 🤓
+02:48:17	Craig Rodrigues:	Reacted to "10? I think 1 year i..." with 🤣
+02:49:21	Shiv S:	Reacted to "https://tldr.tech/ai" with 👍
+02:51:51	Bhanu Anishetty:	Replying to "10? I think 1 year i..."
+
+come 1 more year industry may all be about Quantum computers. We may have a personal quantum computer in a few years. We already have DGX Spark, a personal Super computer.
+02:52:07	MK:	Replying to "Last week, Meta la..."
+
+these news are depressing. i do not know why, but looking at https://trueup.io/job-trend that shows small increase in jobs - it kinda calms me :)
+02:52:11	Duane Morgan:	Cohort 1 for life
+02:52:19	ZC:	Reacted to "Cohort 1 for life" with ❤️
+02:52:21	MK:	Reacted to "Cohort 1 for life" with ❤️
+02:52:28	Ikee:	Reacted to "Cohort 1 for life" with ❤️
+02:52:31	Ravi Kulkarni:	Reacted to "Cohort 1 for life" with ❤️
+02:52:35	Sandeep Raikar:	Thanks a lot Ali 🙏🏽
+02:52:43	Bhanu Anishetty:	Reacted to "Cohort 1 for life" with ❤️
+02:52:48	Prasad:	Reacted to "Cohort 1 for life" with ❤️
+02:52:54	Prasad:	add 👍
+02:53:00	ZC:	add ➕
+02:53:04	MK:	Reacted to "Thanks a lot Ali �..." with ➕
+02:53:11	Nirmal Kumar:	Thanks Ali
+02:53:15	Craig Rodrigues:	Has anyone created an AI version of Can I Google That For you? If not, I think I know what my Capstone project will be. 😂

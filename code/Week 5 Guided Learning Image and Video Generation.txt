@@ -1,0 +1,83 @@
+Title: Image and Video Generation
+
+This lecture covers the foundations of multimodal generation, focusing on text-to-image (T2I) and text-to-video (T2V) systems. We study the core generative models, diffusion-based architectures, training processes, and evaluation metrics for building large-scale multimodal agents.
+
+Learning Objectives:
+
+
+Understand the evolution of generative models (VAE, GANs, autoregressive, diffusion) and their role in image and video generation
+
+Learn T2I pipelines: data preparation, diffusion architectures (U-Net, DiT), training (forward/backward), and sampling methods
+
+Explore evaluation metrics for multimodal systems, including image quality, diversity, alignment, and scores like IS, FID, and CLIP
+
+
+Study T2V methods: latent-diffusion modeling, compression networks, video-specific DiT architectures, and large-scale training challenges
+
+
+
+Assets:
+
+Canvas: The asset has been uploaded under Files (icon on the top left of the page). Please download it and upload it to your Excalidraw session.
+
+Links mentioned in the video:
+
+Auto-Encoding Variational Bayes: https://arxiv.org/abs/1312.6114
+
+Kaggle MNIST dataset: https://www.kaggle.com/datasets/hojjatk/mnist-dataset
+
+TensorFlow MNIST: https://www.tensorflow.org/datasets/catalog/mnist
+
+VAE implementation: https://www.usna.edu/Users/cs/SD312/notes/18VAE/mnist.html
+
+VAE latent space visualization: https://tayden.github.io/VAE-Latent-Space-Explorer/
+
+GAN paper: https://arxiv.org/abs/1406.2661
+
+Overview of GAN structure: https://developers.google.com/machine-learning/gan/gan_structure
+
+StyleGAN2: https://github.com/NVlabs/stylegan2
+
+Conditional Image Generation with PixelCNN Decoders: https://arxiv.org/abs/1606.05328
+
+Image Transformer: https://arxiv.org/abs/1802.05751
+
+DALL.E: https://openai.com/index/dall-e/
+
+Zero-Shot Text-to-Image Generation: https://arxiv.org/abs/2102.12092
+
+Deep Unsupervised Learning using Nonequilibrium Thermodynamics: https://arxiv.org/abs/1503.03585
+
+Denoising Diffusion Probabilistic Models: https://arxiv.org/abs/2006.11239
+
+DALLE2 paper: https://cdn.openai.com/papers/dall-e-2.pdf
+
+This person does not exist: https://thispersondoesnotexist.com/
+
+DALLE2: https://openai.com/index/dall-e-2/
+
+DALLE3: https://openai.com/index/dall-e-3/
+
+Introducing 4o Image Generation: https://openai.com/index/introducing-4o-image-generation/
+
+GPT-ImgEval: A Comprehensive Benchmark for Diagnosing GPT4o in Image Generation: https://arxiv.org/abs/2504.02782
+
+Imagen 4: https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/
+
+LMArean leaderboard: https://lmarena.ai/leaderboard/text-to-image
+
+Laion: https://laion.ai/blog/
+
+High-Resolution Image Synthesis with Latent Diffusion Models: https://arxiv.org/abs/2112.10752
+
+U-Net paper: https://arxiv.org/abs/1505.04597
+
+DiT paper: https://arxiv.org/abs/2212.09748
+
+Video diffusion models: https://video-diffusion.github.io/
+
+Video generation models as world simulators: https://openai.com/index/video-generation-models-as-world-simulators/
+
+Veo: https://deepmind.google/models/veo/
+
+Video generation leaderboard: https://huggingface.co/spaces/ArtificialAnalysis/Video-Generation-Arena-Leaderboard

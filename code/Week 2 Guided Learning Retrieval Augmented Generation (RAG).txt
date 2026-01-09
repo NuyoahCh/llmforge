@@ -1,0 +1,107 @@
+Title: RAGs
+
+This lecture focuses on building a customer support chatbot using Retrieval-Augmented Generation (RAG) combined with prompt engineering. We explore adaptation methods like fine-tuning and parameter-efficient approaches, strategies for crafting effective prompts, the design of RAG pipelines (retrieval, indexing, generation), and how to evaluate system performance.
+
+Learning Objectives:
+
+
+
+
+
+Understand adaptation techniques, including full finetuning, PEFT, adapters, and LoRA, and when to use each
+
+
+
+Apply prompt engineering methods such as few-shot, zero-shot, chain-of-thought, and role-specific prompting to improve chatbot outputs
+
+
+
+Learn the full RAG pipeline: document parsing and chunking, embedding and indexing strategies, retrieval methods, and generation integration
+
+
+
+Evaluate RAG systems using relevance, faithfulness, and correctness, and study overall chatbot design considerations
+
+
+
+Assets:
+
+
+
+
+
+Canvas: https://excalidraw.com/#json=Wi0y8nfRtelsTWx7w4rPH,EpVlErHMwKMIIQuFPx1k1Q
+
+
+
+Links mentioned in the video:
+
+
+
+
+
+Parameter-Efficient Transfer Learning for NLP: https://arxiv.org/abs/1902.00751
+
+
+
+LoRA paper: https://arxiv.org/abs/2106.09685
+
+
+
+HuggingFace PEFT: https://github.com/huggingface/peft
+
+
+
+
+
+Chain-of-Thought Prompting Elicits Reasoning in Large Language Models: https://arxiv.org/abs/2201.11903
+
+
+
+Large Language Models are Zero-Shot Reasoners: https://arxiv.org/abs/2205.11916
+
+
+
+Prompt engineering guide: https://www.promptingguide.ai/
+
+
+
+
+
+Dedoc: https://github.com/ispras/dedoc
+
+
+
+Layout-Parser: https://github.com/Layout-Parser/layout-parser
+
+
+
+Langchain text splitters: https://python.langchain.com/docs/concepts/text_splitters/
+
+
+
+Efficient Estimation of Word Representations in Vector Space: https://arxiv.org/abs/1301.3781
+
+
+
+OpenAI’s embeddings: https://platform.openai.com/docs/guides/embeddings
+
+
+
+The Best Embedding Models for Information Retrieval in 2025: https://www.datastax.com/blog/best-embedding-models-information-retrieval-2025
+
+
+
+OpenAI’s CLIP: https://openai.com/index/clip/
+
+
+
+
+
+Faiss: https://github.com/facebookresearch/faiss
+
+
+
+
+
+RAFT paper: https://arxiv.org/abs/2403.10131

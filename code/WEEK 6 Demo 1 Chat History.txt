@@ -1,0 +1,601 @@
+00:02:51	Theresa@ByteByteGo:	App invitation was sent by Theresa@ByteByteGo.
+00:06:59	Ikee:	@Ali Aminian I learned a lot from Project 5
+00:10:48	perry sy:	someone's phone camera is on
+00:11:17	Maggie Zhao:	Reacted to "someone's phone came..." with 👍🏻
+00:12:50	Ravi:	@Ikee - are we good with LN group updates? You posted it on Circle?
+00:14:18	Ikee:	Replying to "@Ikee - are we good ..."
+
+I thought someone already created the Group. Let me circle back with them in the Community platform later today.
+00:14:31	Harpreet S:	What is SERP API
+00:14:51	perry sy:	Replying to "@Ikee - are we goo..."
+
+https://community.bytebyteai.com/c/member-connections/#message_2044395661
+00:14:58	Theresa@ByteByteGo:	Demo Session Guidelines 
+After each presentation, I’ll type the project title in the Zoom chat. 
+Once you see it, please take one minute to share your feedback in the chat. Be kind, specific, and constructive. Focus on what worked well and how the project could be even better.
+What did you like about the project?,
+What do you think could make it even better?,
+What do you wish the project included or explored further?
+
+Let’s keep the chat thoughtful and helpful for everyone presenting.
+00:14:59	Mohammed Mozumder:	Serp API google search api
+00:15:04	Anand Naidu:	Replying to "What is SERP API"
+
+It scrapes google and returns json.
+00:16:20	Prasad:	Reacted to "Demo Session Guideli..." with 👍
+00:16:27	Ali Aminian:	Reacted to "Demo Session Guideli..." with 👆
+00:17:13	Ikee:	Reacted to "Demo Session Guideli..." with 👍
+00:17:22	Yichi Zhang:	https://unprolix-qualmishly-emile.ngrok-free.dev/
+00:17:26	Prasad:	Awesome work - 
+John Spenceley,
+Mohammed Mozumder, 
+Yichi Zhang, 
+Franklin Ekwe.
+00:17:29	Yichi Zhang:	https://github.com/YichiZ/travel-ai-agent-crew
+00:17:37	Alex Xu:	Reacted to "https://unprolix-qua..." with ❤️
+00:17:39	Anand Naidu:	What is the agent orchestrator used?
+00:17:51	Harpreet S:	Replying to "What is the agent or..."
+
+I believe he mentioned crew ai
+00:17:58	Anand Naidu:	Reacted to "I believe he mention..." with 👍
+00:18:01	Rhea Xu:	Reacted to "I believe he mention..." with 👍
+00:18:39	Anand Naidu:	Do you see hallucinations?
+00:18:46	Harpreet S:	Reacted to "Do you see hallucina..." with ➕
+00:19:02	Pardeep Singh:	Are you saving data somewhere? (Ingestion?) and searching in that (like RAG) or directly calling api?
+00:19:30	Niharika Soni:	Do you have any architecture diagram to understand the flow?
+00:19:32	Harpreet S:	Can you share more details on the design/architecture
+00:19:32	Duane Morgan:	Payment was my roadblock too
+00:20:22	Ikee:	@Yichi Zhang Are you going to have human in the loop or fully automated without the user involved?
+00:21:10	Gaurao Tarpe:	Are you planning to collect the feedback for the results they got as result that would be something can be used for your context?
+00:21:56	Ikee:	Saving the user’s preference in their profile would be extremely useful
+00:22:26	Theresa@ByteByteGo:	Replying to "Are you planning to ..."
+
+Would be best to make the recording available after the session,
+00:22:31	Theresa@ByteByteGo:	AI Travel Agent for Flights, Hotels, and Itineraries
+https://github.com/YichiZ/travel-ai-agent-crew
+00:22:41	Vikrant Vannavada:	Reacted to "AI Travel Agent for ..." with 👏
+00:22:44	Niharika Soni:	Reacted to "AI Travel Agent for ..." with 👏
+00:23:11	Shiv S:	Need to update our project. How can we do in the Spreadsheet?
+00:23:18	Shiv S:	see it hidden now
+00:24:26	Peter Garland:	where is the backend running?
+00:24:34	Peter Garland:	is it local on your machine
+00:24:40	Anand Naidu:	How is working with crew AI on agentic flows?
+00:25:10	Mohammed Mozumder:	Reacted to "Saving the user’s pr..." with 👍
+00:25:11	Sandeep Raikar:	Reacted to "AI Travel Agent for ..." with 👏
+00:25:43	Mohammed Mozumder:	Replying to "where is the backend..."
+
+See link shared by @Yichi Zhang
+00:25:49	Yichi Zhang:	Replying to "What is the agent or..."
+
+Yes, we use crew for managing the agents
+00:26:03	Akanksha:	Reacted to "AI Travel Agent for ..." with 👏
+00:26:23	Anand Naidu:	Reacted to "Yes, we use crew for..." with 👍
+00:26:39	Harpreet S:	Replying to "What is the agent or..."
+
+How much is the cost
+00:27:44	Milosz G:	Replying to "AI Travel Agent for ..."
+
+For the interest and hotel profiles, you can add a simple drop down for preference, not really asking user too many question because it makes it too much work for the user.
+Similarly like we had different prompt expansion for image/ video in multi-modal project - in your case if user picks affordable prefference then you add prompt “Focus on lower price” similar for activities you would have “Outdoor” - focus on mostly outdoor activities near by”.
+
+Q. Can you share what prompt did you use?
+00:28:08	Harpreet S:	If you ask a follow up question  give me further breakdown of California  etc
+00:28:39	Harpreet S:	Like the UI
+00:29:31	Harpreet S:	Is the Chat Memory Manager hand coded or a library?
+00:30:35	Yichi Zhang:	Replying to "Do you see hallucina..."
+
+For hotels and flights no, since they come from Google via Serp API. 
+
+For the itinerary, AFAIK not really, but we could increase reliability by changing the prompt output to maybe a JSON schema and using self-consistency prompting (running the prompt multiple times).
+00:30:54	Anand Naidu:	Reacted to "For hotels and fligh..." with 👍
+00:30:55	Yichi Zhang:	Replying to "Are you saving data ..."
+
+No, the data is transient.
+00:30:57	Jun Xue:	Reacted to "For hotels and fligh..." with 👍
+00:31:02	Rahul Kulkarni:	If you’re using LLM to generate SQL query, how do you make sure that query is not going to overwhelm DB? @Siddartha Thota
+00:31:55	Yichi Zhang:	Replying to "Do you have any arch..."
+
+Please take a look at https://github.com/YichiZ/travel-ai-agent-crew/blob/main/FEATURES.md 
+
+And let me know of any questions.
+00:31:58	Yichi Zhang:	Replying to "Can you share more d..."
+
+Please take a look at https://github.com/YichiZ/travel-ai-agent-crew/blob/main/FEATURES.md 
+
+And let me know of any questions.
+00:33:42	Maggie Zhao:	Reacted to "Please take a look a..." with 👍🏻
+00:34:50	Milosz G:	@Siddartha Thota what tool did you use to create the cool flow chart of your project in the read me?
+00:34:52	Gaurao Tarpe:	@Siddartha Thota Did you tried MCP server of sql? Any learning using mcp vs rag?
+00:35:07	Ikee:	Replying to "@Ikee - are we good ..."
+
+I sent Roy Seto a message in the Community platform. He is not at this session today. I expect to connect with Roy Seto this week to get things rolling.
+00:35:53	Ravi:	@Theresa@ByteByteGo  - Can you please update the git links for the projects in the google sheet for each project. This will help all for quick reference later.
+00:36:04	Ikee:	Reacted to "@Theresa@ByteByteGo ..." with 👍
+00:36:09	Yichi Zhang:	Replying to "@Yichi Zhang Are you..."
+
+Good question, likely fully automated: we could use a monitoring platform like LangSmith to track the prompt output quality and iterate.
+00:36:15	Maggie Zhao:	Reacted to "I sent Roy Seto a me..." with 👍🏻
+00:36:18	Theresa@ByteByteGo:	Replying to "@Theresa@ByteByteGo ..."
+
+Sure
+00:36:25	Ravi:	Reacted to "Sure" with 👍
+00:36:37	Theresa@ByteByteGo:	2. SQL Query Generator by Siddartha Thota
+00:36:41	Ikee:	Reacted to "Good question, likel..." with 👍
+00:36:53	Yichi Zhang:	Replying to "Saving the user’s pr..."
+
+Thank you for the feedback
+00:37:48	Vikrant Vannavada:	@Siddartha Thota  - Great job with the demo. Are you seeing any hallucinations with multi-table joins, and have your measured the accuracy of the answer set?
+00:37:59	Shitalkumar Sawant:	@Siddartha Thota  how did you ensure the schema-meta-data is properly formatted in json.
+00:38:30	Yichi Zhang:	Replying to "is it local on your ..."
+
+Both frontend and backend are on my machine, we are planning to deploy on aws. 
+
+There is a online link deployed with ngrok https://unprolix-qualmishly-emile.ngrok-free.dev/
+00:39:01	Sudhir Chiluveru:	How did you get the schemas? Is it a manual step?
+00:39:05	Ikee:	Replying to "@Yichi Zhang Are you..."
+
+@Yichi Zhang I’m curious about how you’ll ensure secure and error-free in all automated transactions.
+00:39:35	Yichi Zhang:	Reacted to "AI Travel Agent for ..." with ❤️
+00:40:03	Prasad:	Great demo and work @Siddartha Thota
+00:40:09	Ikee:	Reacted to "Both frontend and ba..." with 👍
+00:40:25	Siddartha Thota:	Replying to "@Yichi Zhang Are you..."
+
+Generally in enterprise systems, we need to create these metadata information. But just for the MVP purpose, I created the meta-data using LLM and then added few additional details on what I feel LLM missed and fine-tuned my LLM prompt to make sure in the next run it remembers it.
+00:40:56	Siddartha Thota:	Reacted to "Great demo and work ..." with ❤️
+00:41:29	Harpreet S:	This is an exciting project @Siddartha Thota As you add MCP to it and things you can do will be next level
+00:42:05	Prasad:	Reacted to "This is an exciting ..." with ✔️
+00:42:17	Vikrant Vannavada:	Reacted to "This is an exciting ..." with ✔️
+00:42:25	Siddartha Thota:	Replying to "How did you get the ..."
+
+I manually created tables in the .sql file, but LLM goes over these schemas before generating the schema metadata. 
+
+In real world, we’ll have DAO files, so may be we can build an agent for GIT to fetch all the DAO files and build 1 schema metadata file ourselves instead of LLM doing this for us.
+00:42:26	Anthony Stanislaus:	Reacted to "Both frontend and ba..." with 👍
+00:43:19	Yichi Zhang:	Replying to "@Yichi Zhang Are you..."
+
+Since LLMs are probabilistic by nature, there are no guarantees. There are multiple techniques in the industry. 
+
+For example, we can run the prompts multiple times, or use chain of thought
+00:43:35	Ikee:	Reacted to "Since LLMs are proba..." with 👍
+00:44:41	Siddartha Thota:	Yeah totally agree. I just moved into a new team at work and for production access we have a tooling for which we needed to convert sql/mongo queries into the tooling json format. 
+
+I was planning on taking this project to fetch the sql/mongo queries -> build the json format for the tooling. That’s how I got this idea, I was initially trying out a different project (git code review) -> which I ran into multiple issues.
+00:44:44	Siddartha Thota:	Reacted to "This is an exciting ..." with ✔️
+00:45:08	Theresa@ByteByteGo:	REMINDER
+Each presentor will be given 10 minutes for the presentation (alarm goes off when time is up)
+additional 2 minutes for q&a
+
+If you have more questions, pleae send them in the chat so the presentors can answer them here.
+00:45:14	Ikee:	Reacted to "Yeah totally agree. ..." with 👍
+00:45:17	Anand Naidu:	Reacted to "Yeah totally agree. ..." with 👍
+00:45:28	Ikee:	Reacted to "REMINDER
+Each presen..." with 👍
+00:46:06	Roy's Notetaker (Otter.ai):	Hi, I'm an AI assistant helping Roy Seto take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/0pemESed-4l6etpcoMBdwfv7FFA?utm_source=va_chat_link_1
+
+You can see screenshots and add highlights and comments. After the meeting, you'll get a summary and action items.
+
+
+If you'd like to stop this recording, you can go to the link above and click the Stop button.
+
+If you'd like to stop the recordings for all Otter Notetakers in this meeting, you can type "otter stop" in Zoom chat.
+00:46:23	Jun Xue:	Reacted to "Hi, I'm an AI assist..." with 👍
+00:46:27	Theresa@ByteByteGo:	Reacted to "Hi, I'm an AI assist..." with 👍
+00:46:44	Siddartha Thota:	Replying to "@Siddartha Thota  ho..."
+
+I’ve provided LLM the structure I want it to generate and also LLM is not 100% the first few times, I kept enhancing my prompt and added critical information to make sure it creates right schema metadata the next time. 
+
+For enterprise purposes -> I feel we can use Cursor/Windsurf and fetch all DAO files and create the schema metadata information and pass that info again to LLM to add more crucial information to that data and double verify it 🙂
+00:47:39	Theresa@ByteByteGo:	3. Agentic AI Career Assistant by Prathamesh Bongale
+00:47:43	Mohammed Mozumder:	Reacted to "For the interest and..." with 👍
+00:47:54	Siddartha Thota:	Reacted to "Since LLMs are proba..." with 👍
+00:49:10	Siddartha Thota:	Replying to "@Siddartha Thota  - ..."
+
+Yes a lot of times LLM assumes a ton of things. I had to fine tune my prompt which took more than 50% of my development time.
+00:49:19	Roy Seto:	I’m running Otter.ai live transcription of this session here. You can tail it here now:
+
+https://otter.ai/u/0pemESed-4l6etpcoMBdwfv7FFA?utm_source=copy_url 
+
+After the meeting, this will become a persistent link to the meeting summary and transcript.
+
+[Disclaimer: due to pilot error on my part, it starts around 10:39 AM PST.]
+00:49:43	Anand Naidu:	Replying to "I’m running Otter.ai..."
+
+Thanks Roy. These help a lot.
+00:49:43	Prasad:	Reacted to "I’m running Otter.ai..." with 👍
+00:49:51	Ravi Kulkarni:	Replying to "3. Agentic AI Career..."
+
+@Prathamesh Bongale I also had similar idea. Do you want to partner with me and combine the two projects and take it further? I am bit behind on implementation though.
+00:50:00	Shitalkumar Sawant:	Reacted to "I’ve provided LLM th..." with 👍
+00:50:19	Duane Morgan:	Reacted to "I’m running Otter.ai..." with 👍
+00:50:19	Siddartha Thota:	Replying to "@Siddartha Thota wha..."
+
+I used Claude Code to generate the flow chart in readme.md.
+00:50:22	Ravi Kulkarni:	Replying to "3. Agentic AI Career..."
+
+Great work @Prathamesh Bongale
+00:50:27	Roy Seto:	Reacted to "Great work @Prathame..." with 👍
+00:50:53	Roy Seto:	@Harpreet S - stay safe! I’m in SF where we have earthquakes too.
+00:51:08	Duane Morgan:	Reacted to "@Harpreet S - stay s..." with 🙏
+00:51:24	Ali Aminian:	we had also earthquakes a few weeks back around berkeley area.
+00:51:35	Ikee:	Reacted to "we had also earthqua..." with 🙏
+00:52:01	Roy Seto:	Reacted to "we had also earthqua..." with 🙏
+00:52:05	Ikee:	Replying to "we had also earthqua..."
+
+My daughter told me about it. She was woken up in the middle of the night by it.
+00:52:44	Vikrant Vannavada:	Reacted to "we had also earthqua..." with 🙏
+00:52:46	Shitalkumar Sawant:	Replying to "@Siddartha Thota  ho..."
+
+Was that done offline, it was not clear if that was part of the logical flow.
+00:53:22	Siddartha Thota:	Replying to "@Siddartha Thota Did..."
+
+I didn’t use MCP in this project for now. 
+
+I’ve been building MCP servers at work to expose our tools to agents. 
+
+In this current project, If I’m using it for enterprise, we  can definitely use MCPs exposed to fetch info, or read schema and other crucial information
+00:53:35	Prathamesh Bongale:	Replying to "3. Agentic AI Career..."
+
+Sure Ravi, we can collaborate and take it further
+00:53:45	Roy Seto:	Replying to "we had also earthqua..."
+
+I grew up in Cupertino, the hometown of Apple (when it was still full of apricot orchards and before Jobs founded Apple). We lived next to the San Andreas fault. I usually sleep through earthquakes unless they’re really strong. 
+
+Don’t know if my learned adaptation is evolutionarily helpful or not 😉
+00:53:48	Prathamesh Bongale:	Reacted to "Great work @Prathame..." with 👍
+00:54:11	Vikrant Vannavada:	Reacted to "Yes a lot of times L..." with 👍
+00:55:15	Ikee:	Replying to "we had also earthqua..."
+
+@Roy Seto It was my daugther’s first time experiencing earthquake. Her roommate who is from the area slept through it soundly.😄
+00:55:31	Siddartha Thota:	Replying to "If you’re using LLM ..."
+
+I was doing a batch job balancing LLM timeout along with feeding limited data for now. Ingesting about 1500’ish records took about few minutes for which I didn’t run into any DB related issues. 
+
+In enterprise systems, we might not be ingesting the data, but just fetch.
+00:56:31	Siddartha Thota:	Replying to "@Siddartha Thota  ho..."
+
+Yeah it was offline. Just the local DS connection using sql lite.
+00:58:23	Roy Seto:	Replying to "I’m running Otter.ai..."
+
+@Anand Naidu you bet!
+00:58:32	Roy Seto:	Reacted to "Thanks Roy. These he..." with 🙌
+00:58:47	Roy Seto:	Reacted to "3. Agentic AI Career..." with 👍
+00:58:56	Ikee:	Reacted to "I’m running Otter.ai..." with 👍
+00:59:03	Roy Seto:	Reacted to "@Roy Seto It was my ..." with 😆
+01:00:45	Roy Seto:	Reacted to "REMINDER
+Each presen..." with 👍
+01:01:27	Anand Naidu:	Very impressive @Harpreet S . Well done!!
+01:01:36	Ravi Kulkarni:	Replying to "3. Agentic AI Career..."
+
+Great. I will ping you in the community.
+01:02:19	Maggie Zhao:	very impressive!!! well done @Harpreet S
+01:02:26	Santosh Gajul:	Great one, very much impressive @Harpreet S
+01:02:31	Theresa@ByteByteGo:	4. Financial Agent by Harpreet
+01:02:47	Ali Aminian:	very impressive. Great job!
+01:02:57	Ikee:	Replying to "@Ikee - are we good ..."
+
+@Ravi @perry sy : @Roy Seto  and I are aligning our schedules to get things going. Stay tuned.
+01:02:58	Vikrant Vannavada:	Pretty detailed - Very impressive @Harpreet S !!
+01:03:02	Bhanu Anishetty:	@Harpreet S How long have you been working on this? Great demo. Lot to learn from it.
+01:03:06	Ravi Kulkarni:	Very impressive @Harpreet S
+01:03:10	Prasad:	Amazing work @Harpreet S . This is a prod ready “Product”
+01:03:25	Vikrant Vannavada:	Reacted to "Amazing work @Harpre..." with ➕
+01:04:55	Anand Naidu:	Replying to "4. Financial Agent b..."
+
+@Harpreet S Im sure many people like me would be interested in a deeper dive of your project. If you are willing, we could plan a separate session.
+01:05:47	Maggie Zhao:	@Harpreet S  yes, pls share!!
+01:06:15	Theresa@ByteByteGo:	https://10kiq.com
+01:06:57	Roy Seto:	@Harpreet S - very impressive indeed. Thanks for sharing!
+01:07:20	Peter Garland:	so the entire infrastructure is static html/css with vast.ai as backend?
+01:07:36	Anand Naidu:	Replying to "so the entire infras..."
+
+I think the front-end is react.
+01:08:14	Peter Garland:	Replying to "so the entire infras..."
+
+right, so static ui assets with only vast as backend
+01:08:15	Santosh Gajul:	Replying to "so the entire infras..."
+
+React and Vite has been used for frontend.
+01:08:36	Ravi:	@Ali Aminian @Theresa@ByteByteGo - Sincere request , if we are not able finish all presentation in the 2-day slots, can please you extend 1-2 days for presentation to accommodate all interested . To me this is gold mine of knowledge and learning from all ideas and practical application of learnings we got from your course. We would want to capture all these presentations and not miss any. Hope all here agree. Thanks in advance @Ikee @Roy Seto  / team here !!
+01:09:12	Sandeep Raikar:	Replying to "4. Financial Agent b..."
+
++1 Harpreet, would love to got through the sequence diagram which you shared
+01:09:51	Roy Seto:	Replying to "4. Financial Agent b..."
+
+@Harpreet S I’d love to join a deeper dive session on your project if you’re willing! 
+
+Roy Seto 
+https://www.linkedin.com/in/royseto/  
+
+Backend, Data & Infra Software Engineer & Leader | AI Apps | Growth-Stage Startups | SF
+
+Looking for my next adventure in tech!
+
+@Anand Naidu @Maggie Zhao
+01:09:52	Harpreet S:	Replying to "4. Financial Agent b..."
+
+Yes I would love to give a separate session. I could cover only 50% of my learnings and there were a lot of them. Also wanted to share how I did performance test of different models to chose the best combination for my use case, fine tuning, prompt engineering etc 🙂
+01:09:58	Roy Seto:	Reacted to "https://10kiq.com" with 🙏
+01:10:06	Ikee:	Reacted to "Yes I would love to ..." with 👍
+01:10:08	Maggie Zhao:	Replying to "4. Financial Agent b..."
+
+@Harpreet S  if possible, could you pls may be have a group session for your project?
+01:10:10	Santosh Gajul:	Reacted to "Yes I would love to ..." with 👍
+01:10:12	Roy Seto:	Reacted to "React and Vite has b..." with 👍
+01:10:13	perry sy:	Reacted to "Yes I would love t..." with 👍
+01:10:15	Ravi:	Reacted to "Yes I would love to ..." with 👍
+01:10:21	Maggie Zhao:	Replying to "4. Financial Agent b..."
+
+we would love to hear from you more about this wonderful project
+01:10:23	Vishv Brahmbhatt:	Reacted to "Yes I would love to ..." with 👍
+01:10:27	Vikrant Vannavada:	Reacted to "Yes I would love to ..." with 👍
+01:10:29	Ali Aminian:	Replying to "@Ali Aminian @Theres..."
+
+Thanks Ravi! I totally agree that this is the most valuable piece. We’ll make sure to schedule such that all projects can be presented.
+01:10:39	Theresa@ByteByteGo:	Reacted to "@Ali Aminian @Theres..." with 👍
+01:10:42	Harpreet S:	Replying to "4. Financial Agent b..."
+
+Sure. Can you add your name to the feedback sheet and I can setup something for everyone interested
+01:10:45	Bhanu Anishetty:	Reacted to "we would love to hea..." with 👍
+01:10:46	Maggie Zhao:	Reacted to "Yes I would love to ..." with 👍
+01:10:53	Roy Seto:	Reacted to "@Ali Aminian @Theres..." with ➕
+01:10:58	Ravi:	Replying to "@Ali Aminian @Theres..."
+
+Thanks a lot Ali !!
+01:11:09	Ikee:	Reacted to "Sure. Can you add yo..." with 👍
+01:11:10	Roy Seto:	Reacted to "Thanks Ravi! I total..." with 🙏
+01:11:15	Roy Seto:	Reacted to "Thanks a lot Ali !!" with ➕
+01:11:23	Ikee:	Reacted to "@Harpreet S Im sure ..." with 👍
+01:11:28	Roy Seto:	Reacted to "Sure. Can you add yo..." with 🙏
+01:11:46	Siddartha Thota:	Reacted to "@Ali Aminian @Theres..." with 👍
+01:12:02	Ikee:	Replying to "4. Financial Agent b..."
+
+@Harpreet S can you share the link to the feedback sheet here?
+01:12:03	Maggie Zhao:	Replying to "4. Financial Agent b..."
+
+thank you, btw-where is the feedback sheet?
+01:12:04	Theresa@ByteByteGo:	Replying to "4. Financial Agent b..."
+
+@Harpreet S Can you share the feedback link here so iIcan post update the excel where everyone can see it
+01:12:06	Ashok Kumar Soni:	Replying to "4. Financial Agent b..."
+
+@Harpreet S other than technical execution, you did really great work in time-management and documenting everything ( learning and problems etc)... Really so impressive
+01:12:30	Harpreet S:	Replying to "so the entire infras..."
+
+Vast.ai GPU for server
+Cloudfront for DNS hosting and ssl cert etc
+Nginx
+Everything else is docker (so I can literally move it anywhere)
+Docker 1 - React based front end
+Docker 2 - Python backend
+Docker 3- Postgres
+Docker 4 - Qdrant Vector DB
+Docker 5 - Ollama
+01:12:36	Yash Vyas:	Reacted to "Yes I would love to ..." with 👍
+01:13:01	Ikee:	Replying to "4. Financial Agent b..."
+
+@Harpreet S +1 on @Theresa@ByteByteGo ’s request. Add a link for your slides too.
+01:13:13	Harpreet S:	Replying to "4. Financial Agent b..."
+
+Https://10kiq.com and then feedback link
+01:13:54	Theresa@ByteByteGo:	Replying to "4. Financial Agent b..."
+
+@Harpreet S Found it!
+01:14:01	Theresa@ByteByteGo:	Replying to "4. Financial Agent b..."
+
+Feedback link: https://docs.google.com/spreadsheets/d/16mGF47L0caGkPrHzmwEoC9YfZhqMmASl7SA2hDkSf6Y/edit?gid=0#gid=0
+01:14:44	Roy Seto:	Reacted to "Vast.ai GPU for serv..." with 💡
+01:14:49	Ali Aminian:	Replying to "4. Financial Agent b..."
+
+@Harpreet S would you be open to continue you presentation at the end of our live session today if we are left with extra time? A lot of people are interested to know more about your learnings, myself included.
+01:15:13	Yash Vyas:	Reacted to "@Ali Aminian @Theres..." with ➕
+01:15:19	Harpreet S:	Replying to "4. Financial Agent b..."
+
+sure
+01:15:25	Ali Aminian:	Reacted to "sure" with ❤️
+01:15:25	Ikee:	Replying to "4. Financial Agent b..."
+
+@Harpreet S where on your feedback sheet you like us to add our name so you’ll invite us to future presentations?
+01:16:05	Prasad:	Very nice Demo and work @Anand Naidu !!👍
+01:16:08	Harpreet S:	Replying to "4. Financial Agent b..."
+
+I added tab “future sessions” to the sheet
+01:16:19	Ravi:	Reacted to "I added tab “future ..." with 👍
+01:16:29	Theresa@ByteByteGo:	5. Customer Service Bot by Anand Chelvan
+01:16:32	Ashok Kumar Soni:	Replying to "4. Financial Agent b..."
+
+great work @Anand Naidu
+01:17:11	Maggie Zhao:	Replying to "4. Financial Agent b..."
+
+added our name there @Harpreet S
+01:18:00	Anand Naidu:	Reacted to "great work @Anand Na..." with ❤️
+01:18:08	Anand Naidu:	Reacted to "Very nice Demo and w..." with ❤️
+01:19:07	Anand Naidu:	Reacted to "Yes I would love to ..." with 👍
+01:20:41	Santosh Gajul:	Reacted to "I added tab “future ..." with 👍
+01:21:15	CYel:	Reacted to "Yes I would love to ..." with 👍
+01:22:58	Ikee:	Reacted to "added our name there..." with 👍
+01:25:26	Bhanu Anishetty:	Reacted to "Very nice Demo and w..." with ❤️
+01:27:50	Roy Seto:	@Prasad - thanks so much!
+01:28:05	Theresa@ByteByteGo:	6. AI Photography Coach by Prasad T
+01:29:00	Bhanu Anishetty:	Great demo @Prasad please share the video so we can believe you 😋
+01:29:20	Harpreet S:	Reacted to "Great demo @Prasad p..." with 😃
+01:30:44	Bhanu Anishetty:	Reacted to "https://10kiq.com" with 🙏
+01:31:06	Ali Aminian:	Reacted to "Great demo @Prasad p..." with 🤣
+01:31:59	Anand Naidu:	Reacted to "Great demo @Prasad p..." with 🤣
+01:31:59	Roy Seto:	I’ve learned so much from @Ali Aminian  and all of you—this cohort has been gold!
+
+To help us stay connected and keep the momentum going, I created a private unlisted LinkedIn group for ByteByteAI Cohort 1 (Oct–Nov 2025):
+
+https://www.linkedin.com/groups/16265002/
+
+Let’s use it to share AI learnings, job leads, and project ideas, and to support each other as builders curious about all the exciting innovations and opportunities happening now.
+
+For now, anyone with the link can join directly (no admin approval needed). You’re welcome to invite others from our cohort, but please don’t share the link outside the group.
+
+I’ll switch it to approval-only after the first wave of signups settles.
+
+—
+
+Roy Seto
+https://www.linkedin.com/in/royseto/ 
+Backend, Data & Infra Engineer & Tech Leader | AI Apps | Growth-Stage Startups | SF
+Exploring new opportunities for 2026
+01:32:11	Prasad:	Reacted to "Great demo @Prasad p..." with 🤣
+01:32:17	Vishv Brahmbhatt:	Reacted to "Great demo @Prasad p..." with 🤣
+01:32:38	Rhea Xu:	Reacted to "I’ve learned so much..." with 👏
+01:32:40	Jun Xue:	Reacted to "I’ve learned so much..." with 👍
+01:32:40	Santosh Gajul:	Reacted to "I’ve learned so much..." with 👏
+01:32:41	Bhanu Anishetty:	Reacted to "I’ve learned so much..." with 👏
+01:32:52	Roy Seto:	Reacted to "Great demo @Prasad p..." with 🤣
+01:32:57	Ikee:	Reacted to "I’ve learned so much..." with ❤️
+01:33:03	Ravi:	Reacted to "I’ve learned so much..." with 👏
+01:33:04	Ravi:	Reacted to "I’ve learned so much..." with 👍
+01:33:38	Niharika Soni:	Reacted to "I’ve learned so much..." with 👏
+01:33:46	Mohammed Mozumder:	Reacted to "Sure. Can you add yo..." with 👍
+01:33:49	Maggie Zhao:	Reacted to "Great demo @Prasad p..." with 😜
+01:34:17	Prasad:	GitHub repo (AI Photography Coach) - https://github.com/prasadt1/ai-photography-coach-rag
+01:34:20	Gobinda B Borah:	Reacted to "I’ve learned so much..." with ❤️
+01:34:26	Maggie Zhao:	Reacted to "GitHub repo (AI Phot..." with 👍🏻
+01:34:29	Niharika Soni:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:34:35	Prasad:	Replying to "GitHub repo (AI Phot..."
+
+Please feel free to explore / collaborate / feedback. Thanks
+01:34:40	tanweer hossain:	Reacted to "I’ve learned so much..." with ❤️
+01:34:45	Vishv Brahmbhatt:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:34:45	Ikee:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:34:55	Ali Aminian:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:35:00	Ali Aminian:	Reacted to "I’ve learned so much..." with ❤️
+01:35:20	Theresa@ByteByteGo:	Reacted to "I’ve learned so much..." with 👏
+01:35:25	Sivaraja Sivabada:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:35:46	Bhanu Anishetty:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:36:04	Prasad:	Reacted to "I’ve learned so much..." with ❤️
+01:36:26	Santosh Gajul:	Reacted to "GitHub repo (AI Phot..." with 👍
+01:37:16	Soniya Singhal:	I have to leave. Look fwd to video nd GitHub repo/slides on portal please. Mind blowing work all!
+01:37:29	Ikee:	Reacted to "I have to leave. Loo..." with 👍
+01:37:30	Aidan Piraino:	Reacted to "I’ve learned so much..." with 👏
+01:38:57	Roy Seto:	Reacted to "I have to leave. Loo..." with 👍
+01:40:09	Ali Aminian:	Reacted to "I have to leave. Loo..." with 👍
+01:40:40	Ali Aminian:	Reacted to "I’ve learned so much..." with 👏
+01:40:42	Vikrant Vannavada:	Reacted to "I’ve learned so much..." with ❤️
+01:43:44	Maggie Zhao:	good work @Chetan Vartak
+01:44:04	Prasad:	@Chetan Vartak  - great work!
+01:44:07	Theresa@ByteByteGo:	7. SQL Query Generator (RAG) and Order Management Agent (MCP) by Chetan Vartak
+01:44:08	Santosh Gajul:	Good work @Chetan Vartak
+01:44:41	Venkat Prasad:	Great work !
+01:45:01	Rahul Kulkarni:	@Chetan Vartak Can you share some learnings from using RAG vs MCP? Nice work.
+01:45:10	Bhanu Anishetty:	Reacted to "@Chetan Vartak Can y..." with 👍
+01:45:52	Venkat Prasad:	Need to drop now ! Will watch the recording ! Thanks everyone ! Really enjoyed this course and our time together. Wishing you all the best !
+01:46:05	Maggie Zhao:	Reacted to "Need to drop now ! W..." with 👍🏻
+01:46:06	Ali Aminian:	Reacted to "Need to drop now ! W..." with ❤️
+01:46:10	Ikee:	Reacted to "Need to drop now ! W..." with 👍
+01:46:15	Ikee:	Reacted to "@Chetan Vartak Can y..." with 👍
+01:46:43	Prasad:	Reacted to "Need to drop now ! W..." with ❤️
+01:47:07	Prasad:	Reacted to "I have to leave. Loo..." with 👍
+01:48:49	Prasad:	Reacted to "Need to drop now ! W..." with 👍🏻
+01:49:05	ZC:	Reacted to "Need to drop now ! W..." with ❤️
+01:52:28	Santosh Gajul:	Reacted to "Need to drop now ! W..." with ❤️
+01:53:59	Vikrant Vannavada:	Reacted to "Need to drop now ! W..." with 👍🏻
+01:57:30	Yash Vyas:	Reacted to "Vast.ai GPU for serv..." with 💡
+01:57:33	Prasad:	@Shitalkumar Sawant  - great presentation and work.
+01:58:32	Theresa@ByteByteGo:	8. Compliance Officer by Shital Sawant
+01:58:47	Maggie Zhao:	@Shitalkumar Sawant  great project for the model comparison👍🏻
+01:59:38	Prasad:	I really liked that Model comparison report.
+02:00:53	Shitalkumar Sawant:	Reacted to "@Shitalkumar Sawant ..." with ❤️
+02:00:56	Bhanu Anishetty:	Reacted to "@Shitalkumar Sawant ..." with ❤️
+02:00:59	Shitalkumar Sawant:	Reacted to "8. Compliance Office..." with ❤️
+02:01:03	Shitalkumar Sawant:	Reacted to "@Shitalkumar Sawant ..." with ❤️
+02:01:08	Shitalkumar Sawant:	Reacted to "I really liked that ..." with ❤️
+02:01:25	Prasad:	I am totally hooked. Let’s do more demos please 🙂
+02:01:31	Bhanu Anishetty:	Reacted to "I am totally hooked...." with ❤️
+02:01:43	Maggie Zhao:	Reacted to "I am totally hooked...." with 😀
+02:02:20	Ikee:	@Shitalkumar Sawant Maybe you already mentioned it but I didn’t hear it. Could you improve the correctness and accuracy of your tool by using multiple LLMs and use their aggregate results to flag for non-compliance data?
+02:03:08	Maggie Zhao:	we definitely need more demo sessions!!! those projects are all amazing and inspiring!!!
+02:03:16	Ravi:	Replying to "@Shitalkumar Sawant ..."
+
+Will be great add, as with compliance you want to be as accurate as possible for your compliance results and comparisons.
+02:03:27	Prasad:	Reacted to "@Shitalkumar Sawant ..." with ✔️
+02:03:29	Shitalkumar Sawant:	Reacted to "Will be great add, a..." with 👍
+02:03:29	Prasad:	Reacted to "Will be great add, a..." with ✔️
+02:03:32	Prasad:	Reacted to "we definitely need m..." with ❤️
+02:04:38	Harpreet S:	Replying to "@Shitalkumar Sawant ..."
+
+Couple of things to keep an eye out with multiple LLMs is 
+1) Latency of querying multiple
+2) Cost
+3) how to decide which output is correct
+02:05:15	Prasad:	Reacted to "Couple of things to ..." with 💡
+02:05:25	Ikee:	Reacted to "we definitely need m..." with ❤️
+02:05:33	Shitalkumar Sawant:	Replying to "@Shitalkumar Sawant ..."
+
+That’s a good suggestion @Ikee 
+
+I can experiment and use two models:
+
+One to identify attributes and another one to use attributes as an input to identify the regulation.
+
+The alternative is to fan out request to multiple models and determine which model is the most confident.
+
+Did you have any other idea?
+02:06:21	Shitalkumar Sawant:	Reacted to "we definitely need m..." with 👍
+02:06:51	Anand Naidu:	@Ali Aminian @Theresa@ByteByteGo  Would be great if Cohort 1 is also invited to future cohort demo sessions.
+02:07:17	Ikee:	Reacted to "@Ali Aminian @Theres..." with 👍
+02:07:18	Prasad:	Reacted to "@Ali Aminian @Theres..." with ➕
+02:07:27	Harpreet S:	Reacted to "@Ali Aminian @Theres..." with ➕
+02:07:34	Ikee:	Reacted to "@Ali Aminian @Theres..." with ➕
+02:08:24	Maggie Zhao:	Reacted to "@Ali Aminian @Theres..." with ➕
+02:08:41	Ravi:	Replying to "we definitely need m..."
+
+We requested Ali and Theresa for accommodating all demos and possible more slots as well. They have agreed for the same.
+02:09:00	Ravi:	Reacted to "@Ali Aminian @Theres..." with 👍
+02:09:01	Ravi:	Reacted to "@Ali Aminian @Theres..." with ➕
+02:09:16	Ravi:	Reacted to "we definitely need m..." with 👍
+02:09:33	Jun Xue:	Reacted to "we definitely need m..." with ❤️
+02:09:42	perry sy:	Reacted to "@Ali Aminian @Ther..." with ➕
+02:10:30	Theresa@ByteByteGo:	9. AI Book Discovery Chat by Sivaraja Sivabada, and
+Dhanendra Stanislaus
+02:10:43	Roy Seto:	Reacted to "GitHub repo (AI Phot..." with 👍
+02:11:07	Roy Seto:	Reacted to "7. SQL Query Generat..." with 👍
+02:11:08	Prasad:	@Sivaraja Sivabada  @D Stanislaus  - GReat work and presentation.
+02:11:15	Roy Seto:	Reacted to "Need to drop now ! W..." with ❤️
+02:11:17	Roy Seto:	Reacted to "Need to drop now ! W..." with 👍🏻
+02:11:17	Ravi:	Reacted to "@Sivaraja Sivabada  ..." with 👍
+02:11:23	Sivaraja Sivabada:	Reacted to "@Sivaraja Sivabada  ..." with ❤️
+02:11:38	Roy Seto:	Reacted to "I really liked that ..." with ❤️
+02:11:51	Roy Seto:	Reacted to "I am totally hooked...." with ➕
+02:12:15	Vaibhav Pal:	Reacted to "@Ali Aminian @Theres..." with 👍
+02:13:03	Roy Seto:	Reacted to "@Ali Aminian @Theres..." with 👍
+02:13:09	Roy Seto:	Reacted to "we definitely need m..." with ❤️
+02:13:10	Roy Seto:	Reacted to "we definitely need m..." with 👍
+02:13:21	Roy Seto:	Reacted to "9. AI Book Discovery..." with 👍
+02:13:26	Roy Seto:	Reacted to "@Sivaraja Sivabada  ..." with ❤️
+02:15:34	Theresa@ByteByteGo:	To all current and future presentors, kindly share relevant links about the project to the excel file.
+
+For future presentors, this will allow other members to check them ahead, and that they can provide feedback during the demo sessions.
+02:15:59	Theresa@ByteByteGo:	Replying to "To all current and f..."
+
+Link here: https://docs.google.com/spreadsheets/d/1bR_Yxg040Yk9I0ZDTvX95ygo8Mfgu0DsbgViA9BHOuU/edit?gid=0#gid=0
+02:16:48	Prasad:	Reacted to "To all current and f..." with 👍
+02:19:56	Harpreet S:	Its been over 2 hours of awesome presentation, should I continue my session sometime later?
+02:21:00	Theresa@ByteByteGo:	10. QuizMaster – AI-Generated Quizzes by Bhanu Anishetty, and Sumana Potluru
+02:21:19	Ikee:	Replying to "@Shitalkumar Sawant ..."
+
+@Shitalkumar Sawant Not at this time. Will share with you as new ideas arise. If I were you, I would test by using more than 2 models due to the level of accuracy the results need to be. It’s like how many “9” of accuracy your tool can gurantee. I would focus on accuracy before optimizing the tool to have acceptably low latency.
+02:22:56	Prasad:	@Bhanu Anishetty  - Great idea and presentation. And the Quiz questions are Tougher than I thought 🙂 ! Can you prompt your way through the LLM to generate easier questions . 😄
+02:23:09	Vaibhav Pal:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:23:09	Ali Aminian:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:23:09	Harpreet S:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:23:13	Ravi:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:23:46	Vishv Brahmbhatt:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:24:03	Maggie Zhao:	@Bhanu Anishetty  quiz looks great!!! i wish our future oa would be as “hard “ as your quiz 😛
+02:24:12	Maggie Zhao:	Reacted to "@Bhanu Anishetty  - ..." with 😂
+02:24:12	Shitalkumar Sawant:	Reacted to "@Shitalkumar Sawant ..." with 👍
+02:24:21	Ikee:	Replying to "Its been over 2 hour..."
+
+Maybe as a cohort, we could have regularly scheduled demo sessions. I’m in the process of scheduling a zoom with Roy Seto to discuss the management of the private LN group he created. I’ll add this topic to my discussion with him, in terms of who and how to handle the logistics of scheduling and facilitation live sessions such as future demo sessions.
+02:24:40	Ravi:	Replying to "@Bhanu Anishetty  - ..."
+
+This idea is only for demo hopefully , else Ali would get some ideas for next cohort to pass this test first before completion or certification. Those guys would complain, Cohort-1 passed and then created this gate check for next batches lol
+02:25:25	Ravi:	Reacted to "Maybe as a cohort, w..." with 👍
+02:25:36	Prasad:	Reacted to "This idea is only fo..." with 😄
+02:27:00	Bhanu Anishetty:	Reacted to "@Bhanu Anishetty  qu..." with 😁
+02:27:29	Roy Seto:	Reacted to "Maybe as a cohort, w..." with 👍
+02:27:39	Bhanu Anishetty:	Reacted to "This idea is only fo..." with 😄

@@ -1,0 +1,826 @@
+00:22:27	Theresa@ByteByteGo:	Deep Dive session is at 10 AM PT
+01:07:30	perry sy:	hi everyone, my image generation took more than 30 mins and still didn't finish, anyone beat my record
+01:07:53	Ikee:	Replying to "hi everyone, my imag..."
+
+did you use GPU?
+01:09:11	perry sy:	Replying to "hi everyone, my im..."
+
+yea, GPU setting, reduce steps, reduced image sizes, enable_model_cpu_offload etc..
+01:09:59	perry sy:	Replying to "hi everyone, my im..."
+
+going to do exactly like Ali's solution and try again afterward :)
+01:11:17	Ikee:	Reacted to "going to do exactly ..." with 👍
+01:11:21	Monir Mozumder:	With so many interesting capstone projects registered, I am sure we cannot cover all in one session. How about we continue the Saturday 10AM PST sessions for weeks after the cohort end and each we we go by the sequential order in the Capstone signup sheet and teams showcase their work.   Hi @AlexXu,  @Ali Aminian , @Theresa@ByteByteGo  let me know if this sounds good, and if you can keep the logistics for that.
+01:11:48	Roy's Notetaker (Otter.ai):	Hi, I'm an AI assistant helping Roy Seto take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/s4qVCkiScDqPSvRQr37bmh8G51w?utm_source=va_chat_link_1
+
+You can see screenshots and add highlights and comments. After the meeting, you'll get a summary and action items.
+
+
+If you'd like to stop this recording, you can go to the link above and click the Stop button.
+
+If you'd like to stop the recordings for all Otter Notetakers in this meeting, you can type "otter stop" in Zoom chat.
+01:12:14	Craig Rodrigues:	Reacted to "Hi, I'm an AI assist..." with 👍
+01:12:18	Ashok Kumar Soni:	Reacted to "With so many interes..." with 👍
+01:12:27	Ravi Kulkarni:	I didn’t knew there was a demo session tomorrow on Nov 9. When is it scheduled?
+01:12:41	Siddartha Thota:	Replying to "I didn’t knew there ..."
+
+That was the final project demo
+01:12:53	Maggie Zhao:	Replying to "With so many interes..."
+
+good idea， could you pls post it on the portal? so the team could see and answer there?
+01:13:02	Ravi Kulkarni:	Replying to "I didn’t knew there ..."
+
+So we are getting together again tomorrow?
+01:13:09	Siddartha Thota:	Replying to "I didn’t knew there ..."
+
+yeah
+01:13:20	Monir Mozumder:	Replying to "With so many interes..."
+
+Just done that in capstone announcement channel
+01:13:31	Maggie Zhao:	Reacted to "Just done that in ca..." with 👍🏻
+01:13:49	Ravi Kulkarni:	Replying to "I didn’t knew there ..."
+
+When is it scheduled? May be I missed notification about it.
+01:13:49	perry sy:	Reacted to "With so many inter..." with 👍
+01:13:52	Vasuki Subbaramu:	Reacted to "Just done that in ca..." with 👍
+01:14:15	perry sy:	Replying to "I didn’t knew the..."
+
+I think since beinging
+01:14:34	Ravi Kulkarni:	Replying to "I didn’t knew there ..."
+
+Oh ok.
+01:15:11	perry sy:	Replying to "I didn’t knew the..."
+
+but yea, agree with you, easy to miss, would have thought it would just be another week session on Sat
+01:16:18	Siddartha Thota:	DALL-E I think for images is what Open AI uses
+01:16:29	Prasad:	Reacted to "DALL-E I think for i..." with 👍
+01:17:31	Monir Mozumder:	Replying to "I didn’t knew there ..."
+
+See my earlie chat post, I think we can ask them to cancel tomorrow and just continue next few Saturdays?
+01:18:41	B Leishangthem:	Replying to "I didn’t knew there ..."
+
+is there a soln. file for the notebook for project5 . also not seeing the soln. notebooks for previous projects on GitHub.
+01:18:45	perry sy:	Replying to "I didn’t knew the..."
+
+yea, good idea, however, it wouldn't be fair to those have been doing day and night for tomorrow deadline 🙂
+01:19:20	Ravi Kulkarni:	Replying to "I didn’t knew there ..."
+
+There is another one on Nov 30. So I added an entry for capstone project this morning.
+01:19:31	Craig Rodrigues:	I find Grok’s Aurora model is pretty amazing for generating video: https://grok.com/imagine
+01:19:38	Siddartha Thota:	Reacted to "I find Grok’s Aurora..." with 👍
+01:20:02	Siddartha Thota:	Replying to "I find Grok’s Aurora..."
+
+Grok has been pretty good lately. Catching-up with OpenAI, Claude and Gemini
+01:20:43	Maggie Zhao:	Reacted to "I find Grok’s Aurora..." with 👍
+01:21:17	Craig Rodrigues:	Replying to "I find Grok’s Aurora..."
+
+https://x.ai/news/grok-image-generation-release
+01:21:43	Prasad:	Reacted to "I find Grok’s Aurora..." with 👍
+01:23:34	Rahul Kulkarni:	Why do need we need to say .to(cuda) again since we already selected GPU for runtime?
+01:25:19	Prasad:	Replying to "Why do need we need ..."
+
+@Rahul Kulkarni -Selecting a GPU runtime only makes a GPU available—it does not move your model or tensors onto the GPU.
+You must still call .to("cuda") (or .cuda()) explicitly because PyTorch never automatically decides device placement for you.
+01:25:37	Craig Rodrigues:	Reacted to "@Rahul Kulkarni -Sel..." with 💡
+01:25:38	Maggie Zhao:	Reacted to "@Rahul Kulkarni -Sel..." with 👍🏻
+01:26:01	Rahul Kulkarni:	Replying to "Why do need we need ..."
+
+Got it. Thanks.
+01:26:04	Shitalkumar Sawant:	Reacted to "With so many interes..." with 👍
+01:27:46	Bhanu Anishetty:	Replying to "With so many interes..."
+
+There is already a secondary demo session scheduled for Nov 30th. I guess that was the only date that could be accommodated. There is a chat in the *general discussion* section from a few days ago where a similar question was raised.
+01:28:01	Ravi Kulkarni:	Reacted to "With so many interes..." with 👍
+01:28:13	perry sy:	Reacted to "I find Grok’s Aur..." with 👍
+01:28:19	Maggie Zhao:	Reacted to "There is already a s..." with 👍🏻
+01:28:20	Craig Rodrigues:	Replying to "Why do need we need ..."
+
+@Prasad  are GPUs these days typically plugged into a slot directly on a computer motherboard, or are they still plugged into a graphics card, which is then plugged into a slot (PCI-Express or whatever) on the motherboard?
+01:28:21	Siddartha Thota:	Oh nice. I was trying to over stretch myself. Was still behind  with my project. Thanks for sharing
+01:28:38	perry sy:	Reacted to "@Rahul Kulkarni -S..." with 💡
+01:28:38	Craig Rodrigues:	Reacted to "There is already a s..." with 👍🏻
+01:28:56	Louis Finney:	Reacted to "With so many interes..." with 👍
+01:29:02	Bhanu Anishetty:	Reacted to "Oh nice. I was tryin..." with 👍
+01:29:19	Duane Morgan:	https://arxiv.org/pdf/2006.11239
+01:29:44	Duane Morgan:	https://arxiv.org/pdf/2010.02502
+01:29:52	Sandeep Raikar:	Are all the solutions for the previous projects removed?
+01:30:16	perry sy:	Replying to "hi everyone, my im..."
+
+ugh, I did the GPU switch in runtime, but never actually move to cuda, this is what I missed "pipline.to("cuda")
+01:30:29	Gobinda B Borah:	Reacted to "I find Grok’s Aurora..." with 👍
+01:30:59	Craig Rodrigues:	Replying to "Are all the solution..."
+
+@Sandeep Raikar  Looks like it: https://github.com/bytebyteai/ai-eng-projects/commit/96021f7308ec432e482c79d62596b5d6baf34923
+01:32:51	Ikee:	Reacted to "@Rahul Kulkarni -Sel..." with 👍
+01:32:54	Sandeep Raikar:	Thanks Craig, I’m still behind on completing week 3 project 🙁 I guess the reason may be new cohort2 is starting this week
+01:33:27	Ikee:	Reacted to "ugh, I did the GPU s..." with 👍
+01:33:37	Duane Morgan:	Replying to "https://arxiv.org/pd..."
+
+https://arxiv.org/pdf/2207.12598
+01:33:46	Monir Mozumder:	Reacted to "https://arxiv.org/pd..." with 👍
+01:33:51	Monir Mozumder:	Reacted to "https://arxiv.org/pd..." with 👍
+01:34:17	Maggie Zhao:	Replying to "Are all the solution..."
+
+maybe you can watch the deep dive record and find answers from there?
+01:34:53	Prasad:	Replying to "Why do need we need ..."
+
+@Craig – From what I understand, modern GPUs aren’t plugged directly into the motherboard. They come on a graphics card that includes the GPU chip, memory, power circuitry, and cooling, and the whole card goes into a PCIe slot. I’ve never seen a bare GPU chip plugged in by itself.
+That said, this is just based on my limited knowledge—happy to hear your perspective.
+01:35:05	Prasad:	Reacted to "@Sandeep Raikar  Loo..." with 👍
+01:35:10	Sandeep Raikar:	Reacted to "@Sandeep Raikar  Loo..." with 👍
+01:35:33	perry sy:	Replying to "Are all the soluti..."
+
+probably because new cohort session starting so remove the solutions for them
+01:35:59	Matthew Meade:	Replying to "Are all the solution..."
+
+You can switch to an older commit on GitHub and see the solutions for projects 1 - 4: https://github.com/bytebyteai/ai-eng-projects/tree/61c3c393a2e6cc72cf9579949bf75e6e24240bf1
+01:36:05	Craig Rodrigues:	@Sandeep Raikar if  you know git commands you can go to one commit before the remova (as @Matthew Meade  has pointed outl:
+
+git clone https://github.com/bytebyteai/ai-eng-projects/ old-ai-eng-projects
+
+cd old-ai-eng-projects
+
+git checkout 61c3c39
+01:36:12	Sanjeev Jaiswal:	Replying to "Are all the solution..."
+
+@Craig Rodrigues They will send the email as they made the repo private. I saw the message in announcement.
+01:36:13	Prasad:	Reacted to "@Sandeep Raikar if  ..." with 👍
+01:36:52	Maggie Zhao:	Reacted to "@Craig – From what I..." with 👍🏻
+01:36:56	Ashok Kumar:	Reacted to "You can switch to an..." with 👍
+01:37:00	Craig Rodrigues:	Reacted to "@Craig – From what I..." with 👍🏻
+01:37:39	Duane Morgan:	Replying to "https://arxiv.org/pd..."
+
+https://arxiv.org/pdf/2407.08608
+01:38:05	Flavio Francisco:	How can we download all recorded videos?
+01:38:37	Craig Rodrigues:	@Prasad I wonder what is the hardware architecture for servers in datacenter with GPUs.  Such as AWS G4, G5, G6, P5 instances
+01:39:32	Sanjeev Jaiswal:	Replying to "How can we download ..."
+
+You will have lifetime access, right? Still need to download?
+01:40:33	Duane Morgan:	will that pip_img typo cause a delay
+01:41:55	Prasad:	Replying to "Why do need we need ..."
+
+I assume they use dedicated GPU modules (e.g., NVIDIA SXM) mounted on specialized server boards rather than consumer-style plug-in cards.
+01:42:37	Craig Rodrigues:	Reacted to "I assume they use de..." with 👍
+01:42:48	Sandeep Raikar:	Reacted to "I assume they use de..." with 👍
+01:43:22	Prasad:	I got so use to this CUDA unavailable (wink wink)during this Lesson 5 exercises  🙂 . I switched to Kaggle then where I git some free GPU power
+01:43:38	Raluca Bejan:	Reacted to "I got so use to this..." with 👍
+01:43:47	Maggie Zhao:	Reacted to "I got so use to this..." with 👍
+01:44:06	Harpreet S:	If it happens in production how do we “checkpoint” it so that you start from failed step and not restart the whole process
+01:44:15	Sandeep Raikar:	Has anyone saved the zoom chat for the previous 2 weeks? There is lot of additional info discussed here and the recording doesn’t include that
+01:44:30	Harpreet S:	It would be helpful to have a proper GPU server for these sessions so as to see the actual results.
+01:44:47	Duane Morgan:	Replying to "will that pip_img ty..."
+
+ok the copy paste fixed it
+01:45:06	CvdM:	Reacted to "ok the copy paste fi..." with 👍
+01:46:00	Vasuki Subbaramu:	Replying to "If it happens in pro..."
+
+I don’t think you can, caching of a step will need to carry all of the meta data and catalysts. Expensive proposition - if I understand it right
+01:47:38	Harpreet S:	Replying to "If it happens in pro..."
+
+There are ways of checkpointing. Alteast for RAG based applications
+01:49:08	Prasad:	For token counts too ?
+01:51:25	Shitalkumar Sawant:	Reacted to "@Sandeep Raikar  Loo..." with 👍
+01:51:50	Dylan Thomas:	My mental model for Huggingface is like GitHub: models are open {weight|source} in the sense that the weights are open, but you still have to pay attention to the license that it’s released under. Like GPL for software would mean you’d have to release your modifications to weights back to open source, whereas MIT would let you adapt and use for internal project without having to release your mods.  I think :-)
+01:52:40	Dylan Thomas:	Sorta on the current topic, I found that reading the uv docs for PyTorch gave me a much clearer understanding of the complexity of model variants for processor: https://docs.astral.sh/uv/guides/integration/pytorch/
+01:52:50	Duane Morgan:	Reacted to "Sorta on the current..." with 👍
+01:53:34	Bhanu Anishetty:	Reacted to "I assume they use de..." with 👍
+01:53:59	Dylan Thomas:	Replying to "Sorta on the current..."
+
+I guess it’s really no difference that installing architecture-specific builds for Go, Rust, other binaries 🤷
+01:55:36	Bhanu Anishetty:	Replying to "Why do need we need ..."
+
+Consumer grade GPUs still go into PCIE slots. So yes, they are still pluggable to the motherboard.
+01:56:14	Prasad:	Reacted to "Consumer grade GPUs ..." with 👍
+01:56:35	Craig Rodrigues:	Replying to "Why do need we need ..."
+
+It looks like in future, Intel is collaborating with Nvidia to come up with hardware designs where the CPU and GPU will interconnect with NVLink instead of PCI-E, but nothing out yet.  Who knows if/when that will come out, and if Intel will be around in 5 years. 😂
+https://newsroom.intel.com/artificial-intelligence/intel-and-nvidia-to-jointly-develop-ai-infrastructure-and-personal-computing-products
+01:57:16	Craig Rodrigues:	Reacted to "Sorta on the current..." with 💡
+01:57:37	perry sy:	Reacted to "Sorta on the curre..." with 💡
+01:59:29	Craig Rodrigues:	Replying to "Sorta on the current..."
+
+I compiled PyTorch for Intel Mac (I have a 6 year old Mac), and it requires a full C++ toolchain with many C++ libraries to compile.  Doable, but not for the faint of heart.
+
+Python libraries which combine Python + C++ get complicated.
+01:59:45	Ravi:	I think Harpeet's question - How can we be more pro-active for Infra Health Check before we deploy the actual implementation? Are there any libraries which do that function? @Harpreet S
+01:59:55	Harpreet S:	Reacted to "I think Harpeet's qu..." with 👍
+02:00:21	Prasad:	Reacted to "It looks like in fut..." with 😄
+02:00:32	Dylan Thomas:	Reacted to "I think Harpeet's qu..." with ➕
+02:01:01	Bhanu Anishetty:	Reacted to "It looks like in fut..." with 😄
+02:01:13	Duane Morgan:	Replying to "https://arxiv.org/pd..."
+
+https://arxiv.org/pdf/2303.01469
+02:02:43	Prasad:	Neon City…
+02:03:57	Bhanu Anishetty:	Replying to "Why do need we need ..."
+
+Or we could buy a DGX spark to connect remotely to H100/A100 GPUs and run heavier AI workloads with a Decent local GPU. Like we write code locally, DGX spark runs the code remotely on a DGX H100 GPU, can perform inference and training remotely and output results back to our local machine.
+02:04:44	Prasad:	@Ali - In Exercise 2.3, we experimented with num_inference_steps. The documentation says more steps = better quality but slower. Is there a 'sweet spot' number, or does it depend on the model/prompt? How do you decide?"
+02:05:19	Craig Rodrigues:	Replying to "I think Harpeet's qu..."
+
+@Ravi  https://www.perplexity.ai/search/infra-health-check-for-gpu-loa-p20.SpGFQ1akRVQe0Da..w#0
+02:07:05	Bhanu Anishetty:	Replying to "Why do need we need ..."
+
+NVIDIA DGX Spark US - A Grace Blackwell AI supercomputer on your desk
+02:07:23	Craig Rodrigues:	Reacted to "Or we could buy a DG..." with 👍
+02:08:01	Bhanu Anishetty:	Reacted to "I got so use to this..." with 😁
+02:08:23	Duane Morgan:	Replying to "https://arxiv.org/pd..."
+
+https://huggingface.co/docs/diffusers/en/api/pipelines/text_to_video
+02:09:27	Dylan Thomas:	Reacted to "I compiled PyTorch f..." with 😬
+02:10:10	Dylan Thomas:	Replying to "Sorta on the current..."
+
+Yeah, I was referring to the models themselves and which architecture they’re built for, but the PyTorch libs themselves are a whole other pain point.
+02:12:03	Sandeep Raikar:	Reacted to "Sorta on the current..." with 👍
+02:14:14	Prasad:	Reacted to "Yeah, I was referrin..." with 👍
+02:14:25	Craig Rodrigues:	Replying to "Sorta on the current..."
+
+Ali gave a good answer to a question I asked about the file format of the models themselves: https://community.bytebyteai.com/c/week-1-q-a?message_id=2035821553#message_2035698934
+02:14:40	Dylan Thomas:	Reacted to "Ali gave a good answ..." with 👀
+02:14:59	Sandeep Raikar:	Reacted to "Ali gave a good answ..." with 👀
+02:18:50	Bhanu Anishetty:	On almost all the generated videos, even I saw a *shuttershock* watermark. I wonder if the LLM is outputting a brand new video that is generated from our inputs or one that was used to train it.
+02:19:38	Prasad:	Reacted to "Ali gave a good answ..." with 👀
+02:19:45	Bhanu Anishetty:	Replying to "On almost all the ge..."
+
+or may be this entire model's training corpus was on shuttershock videos/ images
+02:20:21	Duane Morgan:	Reacted to "or may be this entir..." with 💡
+02:20:30	Ravi:	Reacted to "@Ravi  https://www.p..." with 👍
+02:20:44	Sandeep Raikar:	Reacted to "@Craig – From what I..." with 👍🏻
+02:20:54	Rahul Kulkarni:	Has anyone figured out how they will use image and video generation in their work? I’d love to hear some ideas.
+02:22:50	Sandeep Raikar:	Replying to "Has anyone figured o..."
+
+I’m thinking about visualizing flow diagram image -> video
+02:23:40	Sandeep Raikar:	Replying to "Has anyone figured o..."
+
+Its very difficult but something to think about.
+02:24:31	Bhanu Anishetty:	Replying to "Has anyone figured o..."
+
+Within the demo project I am working on, I want to use t2i=>pdf to generate a exam completion certificate based on a candidate's test scores/completion. At work, I can see I could use it to create training videos based on corpus of training material. Implementation may be more complex, but i think it is doable.
+02:24:59	Rahul Kulkarni:	Replying to "Has anyone figured o..."
+
+I agree. Someone working in media or modeling industry I can see some use cases but haven’t fully thought through how it can be used.
+02:25:22	Rahul Kulkarni:	Reacted to "Within the demo proj..." with 👍
+02:26:13	Prasad:	Reacted to "Within the demo proj..." with 💡
+02:27:23	Roy Seto:	I’m running Otter.ai live transcription for today’s session. You can view it here right now and also after the session is over:
+
+https://otter.ai/u/s4qVCkiScDqPSvRQr37bmh8G51w?utm_source=copy_url
+02:28:19	Roy Seto:	Replying to "I’m running Otter.ai..."
+
+I’d love to keep in touch with like-minded builders in this class!
+
+Roy Seto 
+https://www.linkedin.com/in/royseto/  
+
+Backend, Data & Infra Software Engineer & Leader | AI Apps | Growth-Stage Startups | SF
+
+Looking for my next adventure in tech!
+02:28:24	Craig Rodrigues:	Replying to "Has anyone figured o..."
+
+Not at my work, but I recently attended a meetup on AI/Video and saw two interesting companies which are combining LLM + Video to do interesting things:
+
+https://writeonsaga.com/  allows you to write a script, and it generates a movie.  The target market is writers who want to pitch screenplays to Hollywood studios.
+https://cloudglue.dev/  , can analyze videos and do things like search, RAG
+ https://thehive.ai/  , has massive datacenter which analyzes thousands of videos for harmful content, has Department of Homeland Security as a customer
+02:28:43	Craig Rodrigues:	Reacted to "I’m running Otter.ai..." with 👍
+02:29:06	mallik nimmagadda:	Reacted to "I’m running Otter.ai..." with 👍
+02:29:36	Mikhail Kuzmin:	Reacted to "I’m running Otter..." with 👍
+02:29:47	Maggie Zhao:	Reacted to "I’m running Otter.ai..." with 👍
+02:30:06	Mikhail Kuzmin:	Reacted to "I’d love to keep ..." with 👍
+02:30:51	Craig Rodrigues:	Replying to "Has anyone figured o..."
+
+All the demos I saw were amazing, but Saga’s demo left me really amazed
+02:31:00	mallik nimmagadda:	I vaguely remember that someone mentioned that the  chat history is saved as a doc. Is that true?
+02:31:01	perry sy:	Replying to "I’m running Otter..."
+
+same here
+
+https://www.linkedin.com/in/perry-sy-238385147
+EM
+Looking for my next adventure as well
+02:31:21	Vishv Brahmbhatt:	Reacted to "I’d love to keep in ..." with 👍
+02:31:25	Ashok Kumar:	Reacted to "I’d love to keep in ..." with 👍
+02:31:35	Maggie Zhao:	Reacted to "I’d love to keep in ..." with 👍
+02:31:35	Rahul Kulkarni:	Replying to "Has anyone figured o..."
+
+Thanks for sharing
+02:31:40	Sandeep Raikar:	Reacted to "Not at my work, but ..." with 👍🏽
+02:31:50	mallik nimmagadda:	Reacted to "I’d love to keep in ..." with 👍
+02:31:54	Harpreet S:	Replying to "I vaguely remember t..."
+
+no
+02:31:59	mallik nimmagadda:	Reacted to "Not at my work, but ..." with 👍🏽
+02:32:18	Harpreet S:	Replying to "I vaguely remember t..."
+
+Doc is not a good format. Should be stored as text. You can then compress it, create semantic embeddings etc
+02:32:31	Roy Seto:	Reacted to "same here
+
+https://w..." with 🙌🏼
+02:32:34	Duane Morgan:	Reacted to "Doc is not a good fo..." with 😂
+02:32:38	Matthew Meade:	Reacted to "Doc is not a good fo..." with 😂
+02:32:54	Craig Rodrigues:	Replying to "I’m running Otter.ai..."
+
+@Roy Seto @perry sy  I’ve been posting AI related jobs on the class Discord in the #job-board channel.  You might want to check out: https://discord.com/channels/1424096250168610968/1425919783655964863
+02:33:37	Maggie Zhao:	Reacted to "same here
+
+https://w..." with 👍🏻
+02:33:39	Bhanu Anishetty:	Reacted to "All the demos I saw ..." with 💸
+02:34:05	Prasad:	Reacted to "Not at my work, but ..." with 👍
+02:34:31	rohanraje sawant:	Reacted to "I’d love to keep in ..." with 👍
+02:34:37	Craig Rodrigues:	Combining text/LLM and  video models is  “multimodal”  and  is an active topic with startups
+02:34:40	Anand Naidu:	Reacted to "I’m running Otter.ai..." with 👍
+02:34:40	Bhanu Anishetty:	Reacted to "Not at my work, but ..." with ❤️
+02:34:40	Jun Xue:	Reacted to "I’m running Otter.ai..." with 👍
+02:35:11	perry sy:	Reacted to "@Roy Seto @perry s..." with 👍
+02:35:14	Duane Morgan:	Someone could even create a LinkedIn group to join and post on Circle site? (as if we didn’t have enough areas to check)
+02:35:20	Maggie Zhao:	Reacted to "@Roy Seto @perry sy ..." with 👍🏻
+02:35:46	Ikee:	Reacted to "Not at my work, but ..." with 👍
+02:35:58	Prasad:	Reacted to "Combining text/LLM a..." with ✔️
+02:36:08	Duane Morgan:	Reacted to "Combining text/LLM a..." with 👍
+02:37:26	Chetan Vartak:	Replying to "I’m running Otter.ai..."
+
+what time is the presentation tomorrow
+02:37:46	Harpreet S:	Replying to "I’m running Otter.ai..."
+
+10 am pst
+02:37:50	Prasad:	@Theresa@ByteByteGo  - Was the invite for Nov 30th session already sent? If yes - for some reason didn’t land up in my inbox
+02:38:10	Roy Seto:	Reacted to "@Roy Seto @perry sy ..." with 🙌🏼
+02:38:19	Chetan Vartak:	Reacted to "10 am pst" with 👍
+02:38:37	Jun Xue:	Anyone knows where to access the course presentation deck?
+02:39:37	Ravi:	Replying to "Anyone knows where t..."
+
++1
+02:39:54	Maggie Zhao:	Replying to "I’m running Otter.ai..."
+
+@Craig Rodrigues how can i get access to the discord? i signed in but nothing there…might be something wrong at my end.
+02:40:45	Roy Seto:	Replying to "I’m running Otter.ai..."
+
+@Craig Rodrigues Thanks! My plan: 
+
+Fall 2025 (now)
+Hands-on AI upskilling (like this excellent course)
+Nurture & broaden network
+
+Early 2026: Shift more energy to top-of-funnel lead generation (for a full-time role as a staff+ engineer or EM/eng director at a B2B enterprise growth-stage startup)
+02:41:06	Roy Seto:	Reacted to "Doc is not a good fo..." with 😂
+02:41:21	Prasad:	Reacted to "@Craig Rodrigues Tha..." with 💡
+02:41:21	Craig Rodrigues:	Reacted to "@Craig Rodrigues Tha..." with 💡
+02:41:22	Matthew Meade:	Are those the “Bonus PDFs”?
+02:41:26	Maggie Zhao:	Reacted to "@Craig Rodrigues Tha..." with 👍🏻
+02:41:32	Prasad:	Reacted to "I’m running Otter.ai..." with 👍
+02:41:47	Duane Morgan:	Reacted to "@Craig Rodrigues Tha..." with 👍
+02:41:50	Prasad:	Reacted to "I’d love to keep in ..." with 👍
+02:41:54	Craig Rodrigues:	Replying to "I’m running Otter.ai..."
+
+That’s a good plan, good luck!
+I think in the next 10 years, if we are not trained on AI, we will be torpedoed in the job market
+02:42:39	Duane Morgan:	Replying to "I’m running Otter.ai..."
+
+10 years 🤯
+02:42:41	Bhanu Anishetty:	Replying to "I’m running Otter.ai..."
+
+@Craig Rodrigues I think we are already there, forget what's 10 years gonna look like 😜
+02:43:10	Prasad:	Replying to "I’m running Otter.ai..."
+
+@Craig Rodrigues  - I think you meant 10 months or days? ;)
+02:43:16	Craig Rodrigues:	Replying to "I’m running Otter.ai..."
+
+@Bhanu Anishetty I hate to agree with you, but I think you are 💯
+02:43:38	Mikhail Kuzmin:	Reacted to "Doc is not a good ..." with 😂
+02:43:40	Maggie Zhao:	we will be there tomorrow for peers and the community🙂
+02:43:43	Bhanu Anishetty:	Reacted to "@Bhanu Anishetty I h..." with 😁
+02:43:46	Duane Morgan:	Good luck presenters
+02:43:46	Lucy K:	Reacted to "I’d love to keep in ..." with 👍
+02:43:49	Flavio Francisco:	Thank you very much @Ali Aminian and ByteByteGo team!!!
+02:43:50	Lucy K:	Reacted to "I’m running Otter.ai..." with 👍
+02:43:54	Bhanu Anishetty:	Reacted to "@Craig Rodrigues  - ..." with 😁
+02:44:00	perry sy:	Thank you Ali, a great first step for me to step into AI engineering
+02:44:13	Prasad:	Reacted to "Thank you very much ..." with ❤️
+02:44:21	Craig Rodrigues:	Replying to "I’m running Otter.ai..."
+
+I still have nightmares of Skynet going online from the Terminator movies. 😂
+02:44:32	Mikhail Kuzmin:	Reacted to "That’s a good pla..." with ➕
+02:44:58	Mikhail Kuzmin:	Reacted to "@Craig Rodrigues  ..." with ➕
+02:45:15	Duane Morgan:	Replying to "https://arxiv.org/pd..."
+
+https://lmarena.ai/leaderboard
+02:45:21	Craig Rodrigues:	Reacted to "@Craig Rodrigues I t..." with 💯
+02:45:22	Prasad:	Replying to "I’m running Otter.ai..."
+
+Maybe it is already On and we don’t know it or living in it and yet  don’t know ha 🙂
+02:45:33	Roy Seto:	Reacted to "Someone could even c..." with 💡
+02:45:35	Craig Rodrigues:	Reacted to "Maybe it is already ..." with 😂
+02:45:36	Prasad:	Reacted to "I still have nightma..." with 🤣
+02:45:39	Roy Seto:	Reacted to "Someone could even c..." with 👍🏼
+02:45:56	Roy Seto:	Reacted to "That’s a good plan, ..." with ➕
+02:46:15	Roy Seto:	Reacted to "That’s a good plan, ..." with 🙌🏼
+02:46:20	Roy Seto:	Reacted to "That’s a good plan, ..." with 🙏🏼
+02:46:27	Roy Seto:	Reacted to "@Craig Rodrigues I t..." with 💯
+02:46:35	Mikhail Kuzmin:	Replying to "I’m running Otter..."
+
+old sci fi books plots.. more than half of those are "bad" :)
+02:46:51	Duane Morgan:	Replying to "I’m running Otter.ai..."
+
+Sora 2 kind of does that
+02:46:52	Mikhail Kuzmin:	Reacted to "I still have night..." with 🤣
+02:49:30	Roy Seto:	Reacted to "Thank you Ali, a gre..." with 🙌🏼
+02:49:59	Roy Seto:	Reacted to "https://arxiv.org/pd..." with 👍
+02:50:01	Roy Seto:	Reacted to "https://arxiv.org/pd..." with 👍
+02:50:03	Mikhail Kuzmin:	Reacted to "Thank you Ali, a g..." with ➕
+02:50:09	Roy Seto:	Replying to "https://arxiv.org/pd..."
+
+@Duane Morgan - thank you!
+02:50:52	Rahul Kulkarni:	Reacted to "Thank you very much ..." with 👍
+02:51:09	Mikhail Kuzmin:	Reacted to "https://arxiv.org/..." with 👍
+02:51:22	Sanjeev Jaiswal:	Does anyone know how to access Bonus 1 and Bonus 2 materials? Like all pdf and study materials  as displayed in bytebyteai.com website?
+02:51:23	Mikhail Kuzmin:	Reacted to "Maybe it is alread..." with 😂
+02:51:37	Duane Morgan:	Lighting.ai (i think) also has a very user friendly “buy gpu” option
+02:51:59	Sumit Pawar:	Reacted to "Lighting.ai (i think..." with 👍
+02:52:01	Duane Morgan:	https://lightning.ai/pricing/?utm_term=&utm_campaign=PMax+Q1+FY26&utm_source=adwords&utm_medium=ppc&hsa_acc=1332059986&hsa_cam=22691136685&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22681463925&gbraid=0AAAAA9Wu011TXHXHSsau96hQl1VO8HuzU&gclid=CjwKCAiA8bvIBhBJEiwAu5ayrFsm5uMJARYK_Xl2c5FMExy1VUVMtAXlzSHJWYlyOTvhq3TpzVm-eBoCf_YQAvD_BwE
+02:52:06	Prasad:	Reacted to "Lighting.ai (i think..." with 👍
+02:52:27	Bhanu Anishetty:	Replying to "I’m running Otter.ai..."
+
+@Craig Rodrigues that is still a possibility. If it does happen, there won't be anyone to say 'I will be back' 😁
+02:52:40	Rahul Kulkarni:	@Ikee I paid too. I am expecting that it will use those GPU units when it runs out of default limits on Colab. I haven’t checked the usage.
+02:52:42	Craig Rodrigues:	Reacted to "@Craig Rodrigues tha..." with 😂
+02:52:56	Mikhail Kuzmin:	Reacted to "@Craig Rodrigues t..." with 😂
+02:53:03	Aum Dutta:	Thank you @Ali Aminian, I have to drop. Take care
+02:53:08	Maggie Zhao:	Reacted to "@Ikee I paid too. I ..." with 👍🏻
+02:53:23	Roy Seto:	I’m creating a private LinkedIn group for this cohort now. If I get it working before I have to leave at noon PST, I’ll post the link here in this chat (and add to Circle later this weekend too).
+
+Someone could even create a LinkedIn group to join and post on Circle site? (as if we didn’t have enough areas to check)
+
+Thanks @Duane Morgan for the excellent suggestion!
+02:53:28	Ikee:	Reacted to "@Ikee I paid too. I ..." with 👍
+02:53:37	Duane Morgan:	Reacted to "I’m creating a priva..." with 🙏
+02:53:43	Maggie Zhao:	Reacted to "I’m creating a priva..." with 👍🏻
+02:53:45	Mikhail Kuzmin:	Reacted to "I’m creating a pr..." with 👍🏻
+02:53:47	Vishv Brahmbhatt:	Reacted to "I’m creating a priva..." with 👍🏻
+02:53:51	Sanjeev Jaiswal:	Reacted to "I’m creating a priva..." with 👍🏻
+02:54:15	Sivaraja Sivabada:	Reacted to "I’m creating a priva..." with 👍
+02:54:36	Maggie Zhao:	Replying to "I’m creating a priva..."
+
+it would be great to share it on Circle as well. it would be able to reach more peers.
+02:55:04	Bhanu Anishetty:	Reacted to "https://lightning.ai..." with 👍
+02:55:05	Roy Seto:	Replying to "I’m creating a priva..."
+
+@Maggie Zhao - Yes, I’ll share on Circle too
+02:55:17	Maggie Zhao:	Reacted to "@Maggie Zhao - Yes, ..." with 👍🏻
+02:55:53	Kasi:	@Ali Aminian Thank you for creating this course and extending to us and defining a learning path to explore more and extend my learning, experimenting and implementing journey. Thanks a ton
+02:56:08	Maggie Zhao:	Reacted to "@Ali Aminian Thank y..." with 👏🏻
+02:56:39	rohanraje sawant:	Reacted to "I’m creating a priva..." with 🙏
+02:56:41	rohanraje sawant:	Reacted to "I’m creating a priva..." with 👍🏻
+02:56:43	Ravi Kulkarni:	Replying to "@Ali Aminian Thank y..."
+
+I too want to echo the same. @Ali Aminian  Thanks a ton.
+02:57:01	Ikee:	Replying to "@Ikee I paid too. I ..."
+
+I saw that the Colab Pro Compute Units expires in 3 months. I didn’t purchase because I didn’t understand how much say 100 compute units will get me in terms of hours or specific usage. If I move my other AI projects (not from this class) to run on my computer, (not Colab), I should look into renting GPU. Therefore, I didn’t upgrade to Colab Pro yet.  Good to know that you paid for Colab Pro and it works for you. Project 5 is a great lesson for me to learn how time consuming and unexpected hurddles I can face when playing with T2I and T2V models.
+02:57:25	Bhanu Anishetty:	Reacted to "I’m creating a priva..." with 👍🏻
+02:57:44	Duane Morgan:	Reacted to "Screenshot2025_11_09_011912.jpg" with 💕
+02:57:56	Ikee:	Reacted to "I’m creating a priva..." with 👍
+02:58:03	Ikee:	Reacted to "it would be great to..." with 👍
+02:58:06	Ikee:	Reacted to "@Maggie Zhao - Yes, ..." with 👍
+02:58:23	Prasad:	@Ikee Exactly—100 Colab compute units roughly translate to GPU usage hours, so if you plan to run larger AI projects locally, renting a GPU can make sense, and it’s true that working with T2I/T2V models often brings unexpected time and complexity.
+02:58:36	Rahul Kulkarni:	Replying to "@Ikee I paid too. I ..."
+
+It kept failing few times with GPU error. So I paid $10 under assumption that it should help run the models quickly.
+02:58:40	Ikee:	LinkedIn Private Group is a great idea since most (if not all) of us are on LinkedIn. We can share legit job opportunities there.
+02:58:48	Harpreet S:	Reacted to "LinkedIn Private Gro..." with 👍
+02:58:51	Bhanu Anishetty:	Reacted to "LinkedIn Private Gro..." with 👍
+02:58:55	Maggie Zhao:	Reacted to "LinkedIn Private Gro..." with 👍
+02:59:02	Gaurao Tarpe:	Reacted to "LinkedIn Private Gro..." with 👍
+02:59:07	D Stanislaus:	Reacted to "LinkedIn Private Gro..." with 👍
+02:59:16	Prasad:	Reacted to "LinkedIn Private Gro..." with 👍
+02:59:27	Prasad:	Reacted to "I saw that the Colab..." with ✔️
+02:59:29	Duane Morgan:	Reacted to "Screenshot2025_11_09_011936.jpg" with ❓
+02:59:37	Mikhail Kuzmin:	Reacted to "Screenshot2025_11_..." with ❓
+02:59:41	Mikhail Kuzmin:	Reacted to "Screenshot2025_11_..." with ❓
+02:59:46	rohanraje sawant:	Reacted to "LinkedIn Private Gro..." with 👍
+02:59:49	Craig Rodrigues:	Reacted to "Screenshot2025_11_09_011912.jpg" with 💕
+03:01:24	Craig Rodrigues:	Replying to "@Ikee I paid too. I ..."
+
+I haven’t tried it, but one of my friends has a startup where he rents out GPUs.  It is more barebones than Colab, but is cheaper, and I think you can get some free credits to try it out at first:
+
+https://www.cloudrift.ai/
+03:01:41	perry sy:	Reacted to "I’m creating a pr..." with 👍🏻
+03:02:09	Bhanu Anishetty:	Reacted to "I haven’t tried it, ..." with 👍
+03:02:14	Sandeep Raikar:	Reacted to "I haven’t tried it, ..." with 👍
+03:02:20	Prasad:	Reacted to "I haven’t tried it, ..." with 👍
+03:02:35	Kasi:	Reacted to "I’m creating a priva..." with 👍🏻
+03:03:25	Ikee:	Reacted to "@Ali Aminian Thank y..." with 👏
+03:03:29	Ikee:	Reacted to "I too want to echo t..." with 👏
+03:03:32	Bhanu Anishetty:	Replying to "@Ikee I paid too. I ..."
+
+If you are planning this for long term, then I think its better we own a good gpu desktop/laptop and then also use remote services when needed.
+03:03:48	Ikee:	Reacted to "@Ikee Exactly—100 Co..." with 👍
+03:03:58	Ikee:	Reacted to "It kept failing few ..." with 😃
+03:04:10	Ikee:	Reacted to "I haven’t tried it, ..." with 👍
+03:04:30	Rahul Kulkarni:	Reacted to "LinkedIn Private Gro..." with 👍
+03:04:41	Ikee:	Reacted to "If you are planning ..." with 👍
+03:04:41	Monir Mozumder:	shameless plug:  we are doing Capstone tomorrow, and thinking about going commercial mode so presenting both Tomorrow and Nov 30th demo. days  You can see evolving progress:  https://www.aitnary.com (this is just a dumb greeting right now, but we are working to get ai features to it as wel go)
+03:04:51	Craig Rodrigues:	What was the total number of students who stayed in this cohort to the end without dropping out?
+03:05:00	Craig Rodrigues:	Reacted to "shameless plug:  we ..." with 👍
+03:05:06	Sanjeev Jaiswal:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+bytebyeai shows these things and Ali said it will be uploaded here in course materials. Is anyone aware?
+03:05:07	Harpreet S:	Replying to "What was the total n..."
+
+It showed 27% completion rate
+03:05:14	Ashok Kumar:	Reacted to "It showed 27% comple..." with 😯
+03:05:20	Sandeep Raikar:	Reacted to "Screenshot2025_11_09_011936.jpg" with ❓
+03:05:27	Craig Rodrigues:	Reacted to "Screenshot2025_11_09_011936.jpg" with ❓
+03:05:34	Ashok Kumar:	Replying to "What was the total n..."
+
+out of 400 signed up?
+03:05:37	Sanjeev Jaiswal:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+Did anyone here downloaded all these ebooks?
+03:05:38	Harpreet S:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+@Sanjeev Jaiswal I dont see too
+03:05:54	Sanjeev Jaiswal:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+We can ask Ali now.
+03:05:58	Ravi:	Replying to "What was the total n..."
+
+@Harpreet S v-- this is still higher compared to other courses out there , where first week itself participation drops below 10 %
+03:05:59	Harpreet S:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+Is it visible on login?
+03:06:17	Bhanu Anishetty:	Reacted to "shameless plug:  we ..." with ❤️
+03:06:22	Duane Morgan:	Replying to "What was the total n..."
+
+@Harpreet S  I think that means completed all the videos and lessons, not drop outs… i did see total drop from 500 to about 450, members..
+03:06:42	Bhanu Anishetty:	Replying to "shameless plug:  we ..."
+
+@Monir Mozumder love the website name 😃
+03:06:44	Sivaraja Sivabada:	Replying to "What was the total n..."
+
+@Harpreet S Like to know what is completion rate based on
+03:06:44	Duane Morgan:	Reacted to "Is it visible on log..." with 👎
+03:06:58	Sandeep Raikar:	Replying to "What was the total n..."
+
+Its possible that lot of folks have not completed all the projects and marked as complete
+03:07:00	Monir Mozumder:	Reacted to "@Monir Mozumder love..." with 👍
+03:07:09	Duane Morgan:	Reacted to "Its possible that lo..." with 👍
+03:07:20	Vishv Brahmbhatt:	Replying to "@Ikee I paid too. I ..."
+
+I ran into issues running both the week 3 and week 4 projects on my machine since it's old, so I ended up running them on Colab. However, basic Colab subscription requires environment setup cells to be run every time I sat down to complete the exercises. Since the dependencies keep upgrading, I constantly worked on resolving package compatibility errors. It seems like renting a GPU would make the development experience smoother.
+03:07:23	THIRUMALA KIRAN:	Reacted to "I’m creating a priva..." with 👍🏻
+03:07:35	Mikhail Kuzmin:	Reacted to "What was the total..." with 🙂
+03:07:37	Monir Mozumder:	Replying to "shameless plug:  we ..."
+
+@Bhanu Anishetty hoping you can benefit using it when we go in public serving mode 🙂
+03:08:09	Roy Seto:	Reacted to "LinkedIn Private Gro..." with 👍
+03:08:20	Bhanu Anishetty:	Replying to "shameless plug:  we ..."
+
+looking forward to it @Monir Mozumder
+03:08:28	Monir Mozumder:	Reacted to "looking forward to i..." with ❤️
+03:08:34	Bhanu Anishetty:	Reacted to "@Bhanu Anishetty hop..." with 👍
+03:08:37	Duane Morgan:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+Bonus 2 is the pdfs he mentioned. don’t see ebooks, yet
+03:08:46	Sivaraja Sivabada:	Reacted to "shameless plug:  we ..." with 👍
+03:08:53	Ikee:	I used a fixed seed with the same prompt in Project 5 to experiment the variations from the T2I model.
+03:09:11	Vishv Brahmbhatt:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+How can you get access to these books?
+03:09:28	Sandeep Raikar:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@Sanjeev Jaiswal  not able to view the file
+03:09:50	Mikhail Kuzmin:	Replying to "Screenshot2025_11_..."
+
+https://community.bytebyteai.com/c/member-connections/#message_2044149261 - this is the thread
+03:10:09	Mikhail Kuzmin:	thx @Sanjeev Jaiswal for asking
+03:10:25	Roy Seto:	Replying to "I’m creating a priva..."
+
+Still working on it… experimenting with how to create private group with my LinkedIn Job Seeker Premium subscription. 
+
+First try using Perplexity Pro’s instructions made it public. Debugging.
+
+https://www.perplexity.ai/search/e6d04da2-c6c9-4be0-bd75-563cc4ef5619 
+
+If anyone here has created a LinkedIn private group using Job Seeker Premium, please respond here and I’ll give you my contact so that we can live collaborate offline. Thanks!
+03:10:29	Roy Seto:	Reacted to "@Ali Aminian Thank y..." with 👏
+03:10:30	Roy Seto:	Reacted to "@Ali Aminian Thank y..." with 👏🏻
+03:10:32	Roy Seto:	Reacted to "I too want to echo t..." with 👏
+03:11:00	Prasad:	Reacted to "shameless plug:  we ..." with 💡
+03:11:17	Prasad:	Reacted to "@Monir Mozumder love..." with ✔️
+03:12:27	Roy Seto:	Reacted to "shameless plug:  we ..." with ❤️
+03:12:28	Roy Seto:	Reacted to "shameless plug:  we ..." with 👍
+03:12:39	Roy Seto:	Reacted to "Screenshot2025_11_09_011912.jpg" with 💕
+03:12:40	Roy Seto:	Reacted to "Screenshot2025_11_09_011912.jpg" with ❓
+03:13:00	Vaibhav Pal:	Reacted to "Its possible that lo..." with 👍
+03:13:07	Mikhail Kuzmin:	Replying to "Screenshot2025_11_..."
+
+@Duane Morgan i can confirm it: just compared system design index from vol1 and vol2 with the pdf index
+03:13:19	Ikee:	Replying to "I’m creating a priva..."
+
+@Roy Seto I haven’t created a LN private group before. I can try to create it tomorrow. Let’s keep in touch in the Community portal.
+03:13:28	Roy Seto:	Reacted to "@Roy Seto I haven’t ..." with 👍🏼
+03:13:31	Ikee:	Replying to "I’m creating a priva..."
+
+I have LN Premium.
+03:13:36	Gaurao Tarpe:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+Where can we find those?
+03:13:46	Roy Seto:	Replying to "I’m creating a priva..."
+
+I’m simply in a hurry right now b/c need to leave for my afternoon appt
+03:13:57	Roy Seto:	Replying to "I’m creating a priva..."
+
+Trying to get it working if I can before I got to run
+03:14:02	Roy Seto:	Replying to "I’m creating a priva..."
+
+(Get it working now)
+03:14:03	Ikee:	Replying to "I’m creating a priva..."
+
+@Roy Seto me too, I am leaving here soon
+03:14:06	Ravi:	Replying to "I’m creating a priva..."
+
+@Roy Seto - I can create the LN group or we can sync offline as well. @Ikee
+03:14:12	Ikee:	Reacted to "(Get it working now)" with 👍
+03:14:20	Ikee:	Reacted to "@Roy Seto - I can cr..." with 👍
+03:14:26	Gaurao Tarpe:	Reacted to "Screenshot2025_11_09_011936.jpg" with ❓
+03:14:39	Roy Seto:	Replying to "I’m creating a priva..."
+
+Ravi I’d like to give it a shot. If I can’t get it working after debugging on my end I’ll reach out.
+03:14:46	Ashok Kumar:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@Sanjeev Jaiswal  not able to view the filehttps://bytebytego.com/guides/
+03:14:52	Ikee:	Replying to "I’m creating a priva..."
+
+@Ravi @Roy Seto continue this discussion on the Community portal. thanks
+03:14:55	Ravi:	Reacted to "Ravi I’d like to giv..." with 👍
+03:15:02	Ravi:	Reacted to "@Ravi @Roy Seto cont..." with 👍
+03:15:33	Duane Morgan:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+those are great, but not the books pictured
+03:16:05	Rahul Kulkarni:	I need to drop. Nice learning with you all. Look forward to staying in touch.
+03:16:21	Sivaraja Sivabada:	Reacted to "I need to drop. Nice..." with 👍
+03:16:21	Rahul Kulkarni:	Good luck to everyone!
+03:16:37	Ashok Kumar:	Reacted to "Good luck to everyon..." with 👍
+03:17:02	Ashok Kumar:	Thanks Ali! Need to drop, was great learning with this group.
+03:17:05	Mikhail Kuzmin:	Where can we find those?
+@Gaurao Tarpecheck your emailbox. there was email with code to use during 1st week (for pdfs), and email to reach out in case of issues.
+03:18:00	rohanraje sawant:	The courses on the byte byte go portal are the digital version of this ebooks
+03:18:22	Ikee:	Reacted to "The courses on the b..." with 👍
+03:18:56	Duane Morgan:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@rohanraje sawant oh… ok, assumed, in pub/pdf format, n that case, ok
+03:18:58	Ikee:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+I have the Generative AI hard copy. Highly recommend it
+03:19:30	Gaurao Tarpe:	Replying to "Screenshot2025_11_09_011936.jpg"
+
+Oh I got the access. Is that visual dev guides?
+03:19:35	rohanraje sawant:	Reacted to "@rohanraje sawant oh..." with 👍
+03:19:50	Duane Morgan:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@Ikee system design and ML are pretty good too, some feel they don’t go deep enough, but there’s still value
+03:22:33	Duane Morgan:	Ok, @all best of luck in your AI journey 👋🏼
+03:22:41	Mikhail Kuzmin:	Reacted to "@Ali Aminian Thank..." with 👏🏻
+03:22:53	Sanjeev Jaiswal:	Reacted to "Is it visible on log..." with 👎
+03:23:22	Sanjeev Jaiswal:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@Vishv Brahmbhatt @Ali Aminian said he will share in course portal and will talk in today’s call.
+03:23:33	Vishv Brahmbhatt:	Reacted to "@Vishv Brahmbhatt @A..." with 👍
+03:23:58	Prasad:	Reacted to "Ok, @all best of luc..." with ❤️
+03:24:03	Mikhail Kuzmin:	Reacted to "Ok, @all best of l..." with ❤️
+03:24:06	rohanraje sawant:	Reacted to "Ok, @all best of luc..." with ❤️
+03:25:26	Mikhail Kuzmin:	as per my quick comparison of system design paper books vol1+vol2 index with relevant digital content - looks like
+03:25:33	Ikee:	Reacted to "@Ikee system design ..." with 👍
+03:25:45	Vishv Brahmbhatt:	Reacted to "I haven’t tried it, ..." with 👍
+03:25:52	Monir Mozumder:	Reacted to "Ok, @all best of luc..." with ❤️
+03:25:59	Ikee:	Replying to "Screenshot2025_11_09_011912.jpg"
+
+@Duane Morgan I was thinking about buying the ML book soon. thanks
+03:27:30	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+I am trying to pull all the linkedin URLs with a script. Some seem to be available right on the intro page and some under the *see more* button. I will share a plain text link of all the linked IN urls from intro page and update the list in the general discussion forum.
+03:28:17	Mikhail Kuzmin:	Reacted to "I am trying to pul..." with 👍
+03:28:55	Monir Mozumder:	Replying to "I’m creating a priva..."
+
+my LI profile:  https://linkedin.com/in/monir-mozumder   changed recently after cohort registration so pasting it here FOMO :)
+03:29:34	Ravi:	MY LN profile - https://www.linkedin.com/in/singhrks/
+03:30:13	D Stanislaus:	Replying to "I’m creating a priva..."
+
+My profile - www.linkedin.com/in/dmstanislaus
+03:30:50	Sanjeev Jaiswal:	Mine: https://www.linkedin.com/in/jassics/  (Security Architect, Flipkart, IN)
+03:31:09	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+Adding 434 links to any group might be a task in itself. We will need to automate this 😁
+03:31:22	Monir Mozumder:	Replying to "I’m creating a priva..."
+
+https://linkedint.com/in/monir-mozumder
+03:31:22	Ravi:	Reacted to "Adding 434 links to ..." with 😀
+03:32:09	Monir Mozumder:	Somehow cannot find the link to the bonus books. Can anyone share a direct link here?
+03:32:34	Monir Mozumder:	Reacted to "Adding 434 links to ..." with 😃
+03:33:24	Vaibhav Pal:	Replying to "I’m creating a priva..."
+
+www.linkedin.com/in/pal-vaibhav
+03:33:33	Vishv Brahmbhatt:	Replying to "I’m creating a priva..."
+
+https://www.linkedin.com/in/vishvbrahmbhatt/
+03:34:25	rohanraje sawant:	Replying to "I’m creating a priva..."
+
+www.linkedin.com/in/rohanraje
+03:34:59	Gaurao Tarpe:	Replying to "I’m creating a priva..."
+
+https://www.linkedin.com/in/gaurao-tarpe/
+03:35:31	Emma Zhou:	Replying to "Somehow cannot find ..."
+
+https://bytebytego.com/courses/genai-system-design-interview/introduction-and-overview
+03:35:41	Monir Mozumder:	Reacted to "https://bytebytego.c..." with ❤️
+03:36:15	Monir Mozumder:	Replying to "Somehow cannot find ..."
+
+thanks @Emma Zhou !
+03:37:05	Ashok Kumar Soni:	Replying to "Somehow cannot find ..."
+
+https://www.linkedin.com/in/ashok-soni-2254709/
+03:38:40	Mikhail Kuzmin:	Replying to "Screenshot2025_11_..."
+
+if you missed question reg ^this content - see last lesson in course, 17th, and check files, there is Additional links.zip with pdfs.
+03:41:35	Monir Mozumder:	how about kaggle?
+03:41:40	Prasad:	Kaggle has such competitions but more towards ML/Data scientist I guess @Cheshta Beniwal
+03:41:48	Craig Rodrigues:	Reacted to "Kaggle has such comp..." with 👍
+03:42:26	Roy Seto:	Everyone: Please consider joining the new private unlisted LinkedIn group I just created for students in Cohort 1 to stay in touch after this course ends. 
+
+https://www.linkedin.com/groups/16265002/ 
+
+Private LinkedIn group for students in ByteByteAI Cohort 1 (Oct-Nov 2025). 
+
+Let's use this group to stay in touch after the course, both to share AI learnings and to build a network to help each other as AI builders in our careers!
+
+Joining will require admin approval. That’s me for now (will welcome help). I have to run- will review and approve tomorrow morning
+03:42:35	Monir Mozumder:	Reacted to "Everyone: Please con..." with ❤️
+03:42:50	Sivaraja Sivabada:	Reacted to "Everyone: Please con..." with 👏
+03:42:59	Roy Seto:	Replying to "Everyone: Please con..."
+
+Roy Seto 
+https://www.linkedin.com/in/royseto/  
+
+Backend, Data & Infra Software Engineer & Leader | AI Apps | Growth-Stage Startups | SF
+
+Looking for my next adventure in tech!
+03:43:02	Monir Mozumder:	thanks @Roy Seto !
+03:43:06	Juan Dorado:	Reacted to "Everyone: Please con..." with ❤️
+03:43:08	Vishv Brahmbhatt:	Reacted to "Everyone: Please con..." with 👏
+03:43:27	Juan Dorado:	Replying to "Everyone: Please con..."
+
+Done! https://www.linkedin.com/in/juanfranciscodoradotorres/
+03:43:48	perry sy:	Replying to "Everyone: Please c..."
+
+joined
+
+https://www.linkedin.com/in/perry-sy-238385147
+03:43:53	Ravi:	Replying to "Everyone: Please con..."
+
+@Roy Seto Sent Request for approval.
+03:43:56	Emma Zhou:	Replying to "I’m creating a priva..."
+
+https://www.linkedin.com/in/emma-zhou-7378ab5b/
+03:44:12	Roy Seto:	Replying to "I’m creating a priva..."
+
+@Maggie Zhao can you post this link on Circle now?
+03:45:08	Roy Seto:	Replying to "I’m creating a priva..."
+
+Maggie - With the announcement blurb above would be great
+03:46:46	perry sy:	Replying to "Everyone: Please c..."
+
+I think we should share it in the community channel since many folks have already left the session.
+03:47:41	Roy Seto:	Replying to "Everyone: Please con..."
+
+@perry sy agree
+03:49:01	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+I think it is better to just create the group and let everyone join the group themselves and then go private once we are done.
+03:49:16	Mikhail Kuzmin:	Reacted to "Everyone: Please c..." with ❤️
+03:50:00	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+I created one here: (13) ByteByteAI Engineering Cohort Group - 10/04/2025 | Groups | LinkedIn we can go private and add more admins as we go.
+03:50:11	Roy Seto:	Replying to "I’m creating a priva..."
+
+@Bhanu Anishetty LinkedIn does not allow the private/public flag for groups to be changed after creation
+03:50:30	perry sy:	Replying to "Everyone: Please c..."
+
+I just posted it there and tagged you @Roy Seto, hope more folks can see it
+https://community.bytebyteai.com/c/member-connections/#message_2044395661
+03:50:48	Monir Mozumder:	Reacted to "I just posted it the..." with ❤️
+03:50:50	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+It does allow me as seen here:
+03:51:16	mallik nimmagadda:	Reacted to "I created one here: ..." with 👍
+03:51:23	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+Am I missing something @Roy Seto?
+03:52:30	Bhanu Anishetty:	Replying to "I’m creating a priva..."
+
+We can move from LISTED=>UNLISTED and also uncheck "Allow members to invite their connections" once the cohort group joins.
+03:53:02	Kevin Lu:	Thank you so much Ali and everyone!
+03:53:09	Sandeep Raikar:	Thanks a lot Ali and everyone
+03:53:28	Ravi:	Replying to "I’m creating a priva..."
+
+Lets follow and join one LN groups ( as folks would get split otherwise and gets difficult to merge later)
+03:53:36	Roy Seto:	Replying to "I’m creating a priva..."
+
+@Bhanu Anishetty - according to my Perplexity Pro research and what I think I saw on the LI UI when I created the group, it’s NOT POSSIBLE to change a group from public to private later

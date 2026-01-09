@@ -1,0 +1,57 @@
+Title: Agents
+
+This lecture examines the design and operation of agents, with emphasis on workflows, tool use, and multi-step reasoning methods. We cover agent orchestration, tool execution, planning strategies, multi-agent systems, and evaluation practices.
+
+Learning Objectives:
+
+Distinguish between agents, agentic systems, and LLMs, and understand levels of agency
+
+Learn workflow techniques such as prompt chaining, routing, parallelization, reflection, and orchestration-worker setups
+
+Study tool integration, including tool calling, formatting, execution, and the Model Context Protocol (MCP)
+
+Explore multi-step reasoning frameworks (ReACT, Reflexion, ReWOO, tree search) and challenges in multi-agent systems
+
+Review evaluation strategies for measuring agent performance and reliability
+
+Assets:
+
+Canvas: The asset has been uploaded under Files. Please download it and upload it to your Excalidraw session.
+
+
+Links mentioned in the video:
+
+
+Introducing Operator: https://openai.com/index/introducing-operator/
+
+Building effective agents: https://www.anthropic.com/engineering/building-effective-agents
+
+Building Effective Agents Cookbook: https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents
+
+Function calling: https://cookbook.openai.com/examples/fine_tuning_for_function_calling
+
+Langchain tools: https://python.langchain.com/docs/integrations/tools/
+
+MCP: https://www.anthropic.com/news/model-context-protocol
+
+Langchain function calling: https://python.langchain.com/docs/how_to/function_calling/
+
+ReAct paper: https://arxiv.org/abs/2210.03629
+
+Reflexion: https://arxiv.org/abs/2303.11366
+
+ReWOO: https://arxiv.org/abs/2305.18323
+
+Tree Search for Language Model Agents: https://arxiv.org/abs/2407.01476
+
+How we built our multi-agent research system: https://www.anthropic.com/engineering/multi-agent-research-system
+
+A practical guide to building agents: https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
+
+A2A: https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+
+A survey of AI agents protocol: https://arxiv.org/abs/2504.16736
+
+Agent leaderboard: https://github.com/rungalileo/agent-leaderboard
+
+OpenAI Agent SDK: https://openai.github.io/openai-agents-python/
